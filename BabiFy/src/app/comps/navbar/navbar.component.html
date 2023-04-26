@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="container-fluid navbar navbar-expand-sm py-1 navbar-dark bg-info">
+        <a class="navbar-brand" routerLink="home">
+        <img src="assets/logo.png" width="80" height="55" alt="">
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search item" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <span class="material-symbols-outlined text-light">
+                    shopping_cart
+                </span>Cart
+                <span class="material-symbols-outlined text-light">
+                    person
+                </span>Sign-in
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
