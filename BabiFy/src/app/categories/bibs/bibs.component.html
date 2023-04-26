@@ -2,7 +2,7 @@
   <!-- list of baby apparel categories -->
   <div class="col-2">
       <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-categories-list" data-toggle="list" routerLink="categories" role="tab" aria-controls="categories">Categories</a>
+          <a class="list-group-item list-group-item-action active" id="list-categories-list" data-toggle="list" routerLink="" role="tab" aria-controls="categories">Categories</a>
           <a class="list-group-item list-group-item-action list-group-item-info" id="list-bodysuits-list" data-toggle="list" routerLink="bodysuits" role="tab" aria-controls="bodysuits">BodySuits</a>
           <a class="list-group-item list-group-item-action list-group-item-info" id="list-bibs-list" data-toggle="list" href="#list-bibs" role="tab" aria-controls="bibs">Bibs</a>
           <a class="list-group-item list-group-item-action list-group-item-info" id="list-mittens-list" data-toggle="list" routerLink="mittens" role="tab" aria-controls="mittens">Mittens</a>
@@ -13,85 +13,103 @@
           <a class="list-group-item list-group-item-action list-group-item-info" id="list-shirts-list" data-toggle="list" routerLink="shirts" role="tab" aria-controls="shirts">Shirts</a>
           <a class="list-group-item list-group-item-action list-group-item-info" id="list-jackets-list" data-toggle="list" routerLink="jackets" role="tab" aria-controls="jackets">Jackets</a>
       </div>
+      
   </div>
   <div class="col-8">
       <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-categories" role="tabpanel" aria-labelledby="list-categories-list"></div>
+        <div class="tab-pane fade" id="list-bodysuits" role="tabpanel" aria-labelledby="list-bodysuits-list">hello</div>
         <div class="tab-pane fade" id="list-bibs" role="tabpanel" aria-labelledby="list-bibs-list">
-          <div class="col-10">
-              <div class="row align-items-start">
-                  <!-- adventure genre -->
-                  <div class="card" style="width: 24rem;">
-                      <img class="card-img-top" src="assets/bibs/bib1.jpg" alt="Card image cap">
-                      <div class="card-body">
-                          <tr *ngFor="let bib of bibs">
+          <div class="container-fluid">
+              <h2 class="lead"></h2>
+   
+              <div class="card">
+              <div class="card-header bg-info text-white">
+                <h4 class="card-title">{{title}}</h4>
+              </div>
+              <div class="card-body">
+                  <div class="card-columns">
+                      <div class="card  mb-3" style="max-width:18rem" *ngFor="let bib of bibs">
+                        <div style="min-height:220px">
+                          <img class="card-img-top" [src]="bib.imageUrl" width="150" height=200>
+                        </div>
+                        <div class="card-body">
                           <h5 class="card-title">{{bib.pname | uppercase}}</h5>
-                          <!-- view details button -->
-                          <!-- if the button is triggered it will show the hidden details -->
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
-                            View Details
-                          </button>
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">{{bib.pname | uppercase}}</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <table class="table table-striped table-dark">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">PRODUCT NAME</th>
-                                        <th scope="col">PRICE</th>
-                                        <th scope="col">COLOR</th>
-                                        <th scope="col">MATERIAL</th>
-                                        <th scope="col">BRAND</th>
-                                        <th scope="col">TYPE</th>
-                                        <th scope="col">PATTERN</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr *ngFor="let bib of bibs">
-                                        <th scope="row">{{bib.id}}</th>
-                                        <td>{{bib.pname | uppercase}}</td>       
-                                        <th>{{bib.price}}</th>
-                                        <th>{{bib.color}}</th>
-                                        <th>{{bib.material}}</th>
-                                        <th>{{bib.brand}}</th>
-                                        <th>{{bib.type}}</th>
-                                        <th>{{bib.pattern}}</th>
-                                        <td>
-                                          <!-- View Details -->
-                                          <a type="button" routerLink="/bib/{{bib.id}}" class="text-white" (click)="onSelect(bib)">
-                                            <span class="material-symbols-outlined">
-                                              visibility
-                                            </span>
-                                          </a>
+                       <div class="card">
+               Color {{bib.color}}<br>
+              Material: {{bib.material}}<br><br>
+              Brand: {{bib.brand}}<br><br>
+              Type: {{bib.type}}<br><br>
+              Pattern: {{bib.pattern}}</div>
+                        <div class="card-footer">
+                          <p class="text-muted">Price: {{bib.price}}</p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>       
+        
+         
                                 
-                                          <span class="material-symbols-outlined">
-                                            delete_forever
-                                          </span>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
+             
+        
+
+
+
+
+
+
+
+
+
+
+<!--
+  <div class="col-14">
+    <div class="container">
+     
+      <div class="col-14">
+       
+          <div class="row">
+          
+              <div class="card" style="width: 20rem;">
+                  <div class="card-body">
+                    <tr *ngFor="let bib of bibs">
+                      <span class="d-block mx-auto mb-4" alt="" width="100" height=150> <img src={{bib.imageUrl}}></span>
+                      <h5 class="card-title">{{bib.pname | uppercase}}</h5>
+                     
+                      <div><td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+                        Add to Cart
+                      </button></td><td>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+                          Buy Now
+                      </button></td></div>
+                  
+                      <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="tdue">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0055/1249/5177/products/Baby-Bib-Blue_1024x1024.jpg?v=1598491971" alt="Card image cap" width="10" 
+                            height="10">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">{{bib.pname | uppercase}}</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="tdue">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body" *ngIf="selectedBib">
+                              
+                             Price: {{electedBib.price}}<br>
+                              Color {{selectedBib.color}}<br>
+                             Material: {{selectedBib.material}}<br>
+                             Brand: {{selectedBib.brand}}<br>
+                             Type: {{selectedBib.type}}<br>
+                             Pattern: {{selectedBib.pattern}}
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                           </div>
+                        </div>
                       </div>
                   </div>
-
-        </div>
-        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-      </div>
-  </div>
-</div>
+              </div>-->

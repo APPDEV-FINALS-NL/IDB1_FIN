@@ -7,4 +7,5 @@ export interface Bib{
     brand: string;
     type: string;
     pattern: string;
+    imageUrl:string;
 }
