@@ -2,7 +2,7 @@
     <!-- list of baby apparel categories -->
     <div class="col-2">
         <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-categories-list" data-toggle="list" routerLink="" role="tab" aria-controls="categories">Categories</a>
+            <a class="list-group-item list-group-item-action active" id="list-categories-list" data-toggle="list" routerLink="categories" role="tab" aria-controls="categories">Categories</a>
             <a class="list-group-item list-group-item-action list-group-item-info" id="list-bodysuits-list" data-toggle="list" routerLink="bodysuits" role="tab" aria-controls="bodysuits">BodySuits</a>
             <a class="list-group-item list-group-item-action list-group-item-info" id="list-bibs-list" data-toggle="list" href="#list-bibs" role="tab" aria-controls="bibs">Bibs</a>
             <a class="list-group-item list-group-item-action list-group-item-info" id="list-mittens-list" data-toggle="list" routerLink="mittens" role="tab" aria-controls="mittens">Mittens</a>
@@ -66,9 +66,10 @@
                 <div class="row align-items-start">
                     <!-- adventure genre -->
                     <div class="card" style="width: 24rem;">
-                        <img class="card-img-top" src="assets/adventure.jfif" alt="Card image cap">
+                        <img class="card-img-top" src="assets/bibs/bib1.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">The Three Musketeers</h5>
+                            <tr *ngFor="let bib of bibs">
+                            <h5 class="card-title">{{bib.pname | uppercase}}</h5>
                             <!-- view details button -->
                             <!-- if the button is triggered it will show the hidden details -->
                             <!-- Button trigger modal -->
