@@ -20,7 +20,7 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { ViewBibsComponent } from './components/view-bibs/view-bibs.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +42,6 @@ import { ViewBibsComponent } from './components/view-bibs/view-bibs.component';
     JacketsComponent,
     DiapersComponent,
     CategoriesComponent,
-    ViewBibsComponent
   ],
   imports: [
     BrowserModule,

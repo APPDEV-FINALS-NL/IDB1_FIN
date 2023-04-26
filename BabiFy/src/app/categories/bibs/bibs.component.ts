@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Bib } from 'src/bibs';
-import { BIBS } from 'src/bibs-lists';
+import { Bib } from 'src/app/bibs';
+import { BIBS } from 'src/app/bibs-list';
 
 @Component({
   selector: 'app-bibs',

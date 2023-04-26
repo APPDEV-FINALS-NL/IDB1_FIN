@@ -16,6 +16,7 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 
+
 const routes: Routes = [
   { path:'sign-in', component: SignInComponent},
   { path:'login', component: LoginComponent},

@@ -1,115 +1,61 @@
-<div class="row">
-  <!-- list of baby apparel categories -->
-  <div class="col-2">
-      <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-categories-list" data-toggle="list" routerLink="" role="tab" aria-controls="categories">Categories</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-bodysuits-list" data-toggle="list" routerLink="bodysuits" role="tab" aria-controls="bodysuits">BodySuits</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-bibs-list" data-toggle="list" href="#list-bibs" role="tab" aria-controls="bibs">Bibs</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-mittens-list" data-toggle="list" routerLink="mittens" role="tab" aria-controls="mittens">Mittens</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-hats-list" data-toggle="list" routerLink="hats" role="tab" aria-controls="hats">Hats</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-blankets-list" data-toggle="list" routerLink="#list-blankets" role="tab" aria-controls="blankets">Blankets</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-diapers-list" data-toggle="list" routerLink="diaper" role="tab" aria-controls="diapers">Cloth Diaper</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-pants-list" data-toggle="list" routerLink="pants" role="tab" aria-controls="pants">Pants</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-shirts-list" data-toggle="list" routerLink="shirts" role="tab" aria-controls="shirts">Shirts</a>
-          <a class="list-group-item list-group-item-action list-group-item-info" id="list-jackets-list" data-toggle="list" routerLink="jackets" role="tab" aria-controls="jackets">Jackets</a>
-      </div>
-      
-  </div>
-  <div class="col-8">
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-categories" role="tabpanel" aria-labelledby="list-categories-list"></div>
-        <div class="tab-pane fade" id="list-bodysuits" role="tabpanel" aria-labelledby="list-bodysuits-list">hello</div>
-        <div class="tab-pane fade" id="list-bibs" role="tabpanel" aria-labelledby="list-bibs-list">
-          <div class="container-fluid">
-              <h2 class="lead"></h2>
-   
-              <div class="card">
-              <div class="card-header bg-info text-white">
-                <h4 class="card-title">{{title}}</h4>
-              </div>
-              <div class="card-body">
-                  <div class="card-columns">
-                      <div class="card  mb-3" style="max-width:18rem" *ngFor="let bib of bibs">
-                        <div style="min-height:220px">
-                          <img class="card-img-top" [src]="bib.imageUrl" width="150" height=200>
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title">{{bib.pname | uppercase}}</h5>
-                       <div class="card">
-               Color {{bib.color}}<br>
-              Material: {{bib.material}}<br><br>
-              Brand: {{bib.brand}}<br><br>
-              Type: {{bib.type}}<br><br>
-              Pattern: {{bib.pattern}}</div>
-                        <div class="card-footer">
-                          <p class="text-muted">Price: {{bib.price}}</p>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibs</title>
+</head>
+<body>
+  <div class="col-12">
+    <div class="row align-items-start">
+      <div class="card" *ngFor="let bib of bibs">
+        <img class="card-img-top" [src]="bib.imageUrl" width="170" height=280 alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{bib.pname | uppercase}}</h5>
+              <a type="button" routerLink="/bib/{{bib.id}}" class="text-white" [class.selected]="bib === selectedBib" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(bib)">
+                <a href="">...view details</a>
+              </a>
+              <div>
+                <td>
+                  <button type="button" class="btn btn-outline-primary">
+                    Add to Cart
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    Buy Now
+                  </button><br>
+                </td>
+                <!-- Modal -->
+                <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedBib">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                    </div>
-              </div>
-            </div>       
-        
-         
-                                
-             
-        
-
-
-
-
-
-
-
-
-
-
-<!--
-  <div class="col-14">
-    <div class="container">
-     
-      <div class="col-14">
-       
-          <div class="row">
-          
-              <div class="card" style="width: 20rem;">
-                  <div class="card-body">
-                    <tr *ngFor="let bib of bibs">
-                      <span class="d-block mx-auto mb-4" alt="" width="100" height=150> <img src={{bib.imageUrl}}></span>
-                      <h5 class="card-title">{{bib.pname | uppercase}}</h5>
-                     
-                      <div><td>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
-                        Add to Cart
-                      </button></td><td>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
-                          Buy Now
-                      </button></td></div>
-                  
-                      <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="tdue">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0055/1249/5177/products/Baby-Bib-Blue_1024x1024.jpg?v=1598491971" alt="Card image cap" width="10" 
-                            height="10">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">{{bib.pname | uppercase}}</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="tdue">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body" *ngIf="selectedBib">
-                              
-                             Price: {{electedBib.price}}<br>
-                              Color {{selectedBib.color}}<br>
-                             Material: {{selectedBib.material}}<br>
-                             Brand: {{selectedBib.brand}}<br>
-                             Type: {{selectedBib.type}}<br>
-                             Pattern: {{selectedBib.pattern}}
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
+                      <div class="modal-body text-dark bg-light">
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"></h5>             
+                          <span class="d-block" alt="" >  
+                            <img src={{selectedBib.imageUrl}} >
+                          </span>
+                          <!-- view details -->
+                          <div class="container-fluid">
+                              <p class="font-weight-bold">PRICE <br>{{selectedBib.price}}</p>
+                              <p class="font-weight-bold">COLOR <br>{{selectedBib.color}}</p>
+                              <p class="font-weight-bold">MATERIAL<br>{{selectedBib.material}}</p>
+                              <p class="font-weight-bold">BRAND<br>{{selectedBib.brand}}</p>
+                              <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedBib.type}}</p>
+                              <p class="font-weight-bold">PATTERN<br>{{selectedBib.pattern}}</p>
                           </div>
-                        </div>
                       </div>
                   </div>
-              </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

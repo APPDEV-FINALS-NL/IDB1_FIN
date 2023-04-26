@@ -1,58 +1,10 @@
-@media (min-width: 576px) {
-
-
-    .card-columns {
-
-
-        column-count: 2;
-
-
-    }
-
-
+body{
+    font-family: tahoma;
 }
-
-
-@media (min-width: 768px) {
-
-
-    .card-columns {
-
-
-        column-count: 3;
-
-
-    }
-
-
+.card{
+    max-width:21rem;
+    min-height:30rem;
 }
-
-
-@media (min-width: 992px) {
-
-
-    .card-columns {
-
-
-        column-count: 3;
-
-
-    }
-
-
-}
-
-
-@media (min-width: 1200px) {
-
-
-    .card-columns {
-
-
-        column-count: 4;
-
-
-    }
-
-
+button{
+    margin-left: 1rem;
 }

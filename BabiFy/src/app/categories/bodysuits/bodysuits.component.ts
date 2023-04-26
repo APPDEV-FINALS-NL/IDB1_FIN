@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Bodysuit} from 'src/app/bodysuits';
+import { BODYSUITS } from 'src/app/bodysuits-list';
 
 @Component({
   selector: 'app-bodysuits',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./bodysuits.component.css']
 })
 export class BodysuitsComponent {
-
+  bodysuits = BODYSUITS;
+  title = 'Bodysuits Lists';
+  selectedBodysuit?:Bodysuit;
+    
+  onSelect(bodysuit:Bodysuit): void{
+    this.selectedBodysuit =bodysuit;
+  }
 }
