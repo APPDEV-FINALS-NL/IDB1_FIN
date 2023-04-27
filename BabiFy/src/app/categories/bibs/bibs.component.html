@@ -17,15 +17,16 @@
                 <a href="">View more</a>
               </a>
               <div>
-                <td>
-                  <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; ">
+                <div style="background-color: #ffffff; padding: 2rem">
+                  <button onclick="document.getElementById('id02').style.display='block'" class="btn btn-warning">
                     Add to Cart
                   </button>
-                  <button type="button" class="btn btn-outline-danger">
+                  <button type="button" class="btn btn-success">
                     Buy Now
-                  </button><br>
-                </td>
+                  </button></div>
+               
                 <!-- Modal -->
+           
                 <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedBib">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -41,6 +42,7 @@
                           </span>
                           <!-- view details -->
                           <div class="container-fluid">
+                            
                               <p class="font-weight-bold">PRICE <br>{{selectedBib.price}}</p>
                               <p class="font-weight-bold">COLOR <br>{{selectedBib.color}}</p>
                               <p class="font-weight-bold">MATERIAL<br>{{selectedBib.material}}</p>
