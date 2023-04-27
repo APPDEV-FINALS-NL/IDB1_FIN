@@ -14,11 +14,11 @@
           <div class="card-body">
             <h5 class="card-title">{{bib.pname | uppercase}}</h5>
               <a type="button" routerLink="/bib/{{bib.id}}" class="text-white" [class.selected]="bib === selectedBib" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(bib)">
-                <a href="">...view details</a>
+                <a href="">View more</a>
               </a>
               <div>
                 <td>
-                  <button type="button" class="btn btn-outline-primary">
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; ">
                     Add to Cart
                   </button>
                   <button type="button" class="btn btn-outline-danger">

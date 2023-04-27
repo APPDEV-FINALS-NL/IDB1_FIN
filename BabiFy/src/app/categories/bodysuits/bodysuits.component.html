@@ -14,11 +14,11 @@
           <div class="card-body">
             <h5 class="card-title">{{bodysuit.pname | uppercase}}</h5>
               <a type="button" routerLink="/bodysuit/{{bodysuit.id}}" class="text-white" [class.selected]="bodysuit === selectedBodysuit" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(bodysuit)">
-                <a href="">...view details</a>
+                <a href="">View more</a>
               </a>
               <div>
                 <td>
-                  <button type="button" class="btn btn-outline-primary">
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; ">
                     Add to Cart
                   </button>
                   <button type="button" class="btn btn-outline-danger">
@@ -35,7 +35,7 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBodysuit.pname"></h5>             
+                        <h5 class="modal-title"  id="exampleModalLabel" [innerText]="'Details of ' + selectedBodysuit.pname  "></h5>             
                           <span class="d-block" alt="" >  
                             <img src={{selectedBodysuit.imageUrl}} >
                           </span>

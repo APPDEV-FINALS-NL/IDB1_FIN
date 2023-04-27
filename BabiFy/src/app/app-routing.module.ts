@@ -16,6 +16,7 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
+import { CarttComponent } from './comps/navbar/cartt/cartt.component';
 
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path:'jackets', component: JacketsComponent},
   { path:'diapers', component: DiapersComponent},
   { path:'cart', component:  CartComponent},
+  { path: 'cartt', component: CarttComponent}
 ];
 
 

@@ -14,11 +14,11 @@
           <div class="card-body">
             <h5 class="card-title">{{jacket.pname | uppercase}}</h5>
               <a type="button" routerLink="/jacket/{{jacket.id}}" class="text-white" [class.selected]="jacket === selectedJacket" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(jacket)">
-                <a href="">...view details</a>
+                <a href="">View More</a>
               </a>
               <div>
                 <td>
-                  <button type="button" class="btn btn-outline-primary">
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; ">
                     Add to Cart
                   </button>
                   <button type="button" class="btn btn-outline-danger">

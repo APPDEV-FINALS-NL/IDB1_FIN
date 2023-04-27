@@ -14,12 +14,12 @@
           <div class="card-body">
             <h5 class="card-title">{{diaper.pname | uppercase}}</h5>
               <a type="button" routerLink="/diaper/{{diaper.id}}" class="text-white" [class.selected]="diaper === selectedDiaper" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(diaper)">
-                <a href="">...view details</a>
+                <a href="">View More</a>
               </a>
               <div>
                 <td>
-                  <button type="button" class="btn btn-outline-primary">
-                    AdD to Cart
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; ">
+                    Add to Cart
                   </button>
                   <button type="button" class="btn btn-outline-danger">
                     Buy Now

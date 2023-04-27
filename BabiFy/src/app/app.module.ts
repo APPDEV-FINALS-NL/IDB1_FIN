@@ -21,6 +21,7 @@ import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CartComponent } from './cart/cart.component';
+import { CarttComponent } from './comps/navbar/cartt/cartt.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { CartComponent } from './cart/cart.component';
     DiapersComponent,
     CategoriesComponent,
     CartComponent,
+    CarttComponent,
   ],
   imports: [
     BrowserModule,
