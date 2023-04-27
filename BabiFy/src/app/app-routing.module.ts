@@ -15,6 +15,7 @@ import { PantsComponent } from './categories/pants/pants.component';
 import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,6 @@ const routes: Routes = [
   { path:'about', component: AboutComponent},
   { path:'bodysuits', component: BodysuitsComponent},
   { path:'bibs', component: BibsComponent},
-  { path:'bib/:id', component: BibsComponent},
   { path:'mittens', component: MittensComponent},
   { path:'hats', component: HatsComponent},
   { path:'blankets', component: BlanketsComponent},
@@ -33,7 +33,7 @@ const routes: Routes = [
   { path:'shirts', component: ShirtsComponent},
   { path:'jackets', component: JacketsComponent},
   { path:'diapers', component: DiapersComponent},
-  { path:'categories', component:  CategoriesComponent},
+  { path:'cart', component:  CartComponent},
 ];
 
 
