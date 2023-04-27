@@ -10,7 +10,7 @@
   <div class="col-12">
     <div class="row align-items-start">
       <div class="card" *ngFor="let blanket of blankets">
-        <img class="card-img-top" [src]="blanket.imageUrl" width="170" height=280 alt="Card image cap">
+        <img class="card-img-top" [src]="blanket.imageUrl" width="170" height="330" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{blanket.pname | uppercase}}</h5>
               <a type="button" routerLink="/blanket/{{blanket.id}}" class="text-white" [class.selected]="blanket === selectedBlanket" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(blanket)">

@@ -1,1 +1,59 @@
-<p>pants works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pants</title>
+</head>
+<body>
+  <div class="col-12">
+    <div class="row align-items-start">
+      <div class="card" *ngFor="let pant of pants">
+        <img class="card-img-top" [src]="pant.imageUrl" width="170" height="330" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{pant.pname | uppercase}}</h5>
+              <a type="button" routerLink="/pant/{{pant.id}}" class="text-white" [class.selected]="pant === selectedPant" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(pant)">
+                <a href="">...view details</a>
+              </a>
+              <div>
+                <td>
+                  <button type="button" class="btn btn-outline-primary">
+                    Add to Cart
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    Buy Now
+                  </button><br>
+                </td>
+                <!-- Modal -->
+                <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedPant">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header bg-info">
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark bg-light">
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedPant.pname"></h5>             
+                          <span class="d-block" alt="" >  
+                            <img src={{selectedPant.imageUrl}} >
+                          </span>
+                          <!-- view details -->
+                          <div class="container-fluid">
+                              <p class="font-weight-bold">PRICE <br>{{selectedPant.price}}</p>
+                              <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedPant.type}}</p>
+                              <p class="font-weight-bold">MATERIAL<br>{{selectedPant.material}}</p>
+                              <p class="font-weight-bold">TYPE OF WASHING<br>{{selectedPant.wash}}</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

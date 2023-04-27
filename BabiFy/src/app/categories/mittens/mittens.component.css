@@ -1,0 +1,10 @@
+body{
+    font-family: tahoma;
+}
+.card{
+    max-width:21rem;
+    min-height:30rem;
+}
+button{
+    margin-left: 1rem;
+}

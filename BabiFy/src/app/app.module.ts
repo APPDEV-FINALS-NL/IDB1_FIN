@@ -20,6 +20,7 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { CategoriesComponent } from './categories/categories.component';
     JacketsComponent,
     DiapersComponent,
     CategoriesComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
