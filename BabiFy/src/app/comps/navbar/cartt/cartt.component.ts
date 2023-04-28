@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cartt',
+  selector: '.app-cartt',
   templateUrl: './cartt.component.html',
   styleUrls: ['./cartt.component.css']
 })
