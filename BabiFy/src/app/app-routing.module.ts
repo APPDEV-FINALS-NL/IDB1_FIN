@@ -16,7 +16,7 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
-import { CarttComponent } from './comps/navbar/cartt/cartt.component';
+import { CarttComponent } from './comps/navbar/buy now/cartt.component';
 
 
 const routes: Routes = [

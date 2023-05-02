@@ -1,55 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>carts</title>
-</head>
-<body>
-  <div class="col-12">
-    <div class="row align-items-start">
-      <div class="card" *ngFor="let cart of carts">
-        <img class="card-img-top" [src]="" width="170" height="330" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">{{cart.name | uppercase}}</h5>
-              <a type="button" routerLink="/cart/{{cart.id}}" class="text-white" [class.selected]="cart === selectedCart" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(cart)">
-                <a href="">...view details</a>
-              </a>
-              <div>
-                <td>
-                  <button type="button" class="btn btn-outline-primary">
-                    Add to Cart
-                  </button>
-                  <button type="button" class="btn btn-outline-danger">
-                    Buy Now
-                  </button><br>
-                </td>
-                <!-- Modal -->
-                <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedCart">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header bg-info">
-                        <button type="button" class="close" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+<div id="id02" class="modal">
+                        
+  <section class="h-50 h-custom" style="background-color: #eee;">
+      <div class="container h-50 py-3">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+              
+            <div class="card shopping-cart" style="border-radius: 15px;">
+              
+              <div class="card-body text-black">
+                
+                <div class="row">
+                  <header style="background-color:#1cb2ba;color:#fff;">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close-button topright">&times;</span>
+                    </header>
+                  <div class="col-lg-6 px-5 py-4">
+    
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">List in your Cart</h3>
+    
+                    <div class="d-flex align-items-center mb-5">
+                      <div class="flex-shrink-0">
+                        <img src="assets/bodysuits/suit1.jpg"
+                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
                       </div>
-                      <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedCart.name"></h5>             
-                          <span class="d-block" alt="" >  
-                          </span>
-                          <!-- view details -->
-                          <div class="container-fluid">
-                              <p class="font-weight-bold">PRICE <br>{{selectedCart.name}}</p>
+                      <div class="flex-grow-1 ms-3">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">The Peanutshell Newborn Layette Gift</h5>
+                        <h6 style="color: #9e9e9e;">Color: Assorted</h6>
+                        <div class="d-flex align-items-center">
+                          <p class="fw-bold mb-0 me-5 pe-3">₱1,200</p>
+                          <div class="def-number-input number-input safari_only">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                              class="minus"></button>
+                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                              type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                              class="plus"></button>
                           </div>
+                        </div>
                       </div>
+                    </div>
+    
+                    <div class="d-flex align-items-center mb-5">
+                      <div class="flex-shrink-0">
+                        <img src="assets/blankets/blanket1.jpg"
+                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">Baby Want Designs Baby Swaddle Blanket</h5>
+                        <h6 style="color: #9e9e9e;">Color: Dusty Rose</h6>
+                        <div class="d-flex align-items-center">
+                          <p class="fw-bold mb-0 me-5 pe-3">₱420</p>
+                          <div class="def-number-input number-input safari_only">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                              class="minus"></button>
+                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                              type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                              class="plus"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="d-flex align-items-center mb-5">
+                      <div class="flex-shrink-0">
+                        <img src="assets/bibs/bib1.jpg"
+                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                        <h5 class="text-primary">Silicone Baby Bibs Easily Wipe Clean</h5>
+                        <h6 style="color: #9e9e9e;">Color:Turquoise/Lime Green</h6>
+                        <div class="d-flex align-items-center">
+                          <p class="fw-bold mb-0 me-5 pe-3">₱199</p>
+                          <div class="def-number-input number-input safari_only">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                              class="minus"></button>
+                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="2"
+                              type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                              class="plus"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+    
+                    <div class="d-flex justify-content-between px-x">
+                      <p class="fw-bold">Discount:</p>
+                      <p class="fw-bold">None</p>
+                    </div>
+                    <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                      <h5 class="fw-bold mb-0">Total:</h5>
+                      <h5 class="fw-bold mb-0">2,018</h5>
+                    </div>
+    
                   </div>
+                  <div class="col-lg-6 px-5 py-4">
+    
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+    
+                    <form class="mb-5">
+    
+                      <div class="form-outline mb-5">
+                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                          value="xxxx xxxx xxxx xxxx" minlength="19" maxlength="19" />
+                        <label class="form-label" for="typeText">Card Number</label>
+                      </div>
+    
+                      <div class="form-outline mb-5">
+                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                          value="Nic Laroya" />
+                        <label class="form-label" for="typeName">Name on card</label>
+                      </div>
+    
+                      <div class="row">
+                        <div class="col-md-6 mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="typeExp" class="form-control form-control-lg" value="01/22"
+                              size="7" id="exp" minlength="7" maxlength="7" />
+                            <label class="form-label" for="typeExp">Expiration</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                          <div class="form-outline">
+                            <input type="password" id="typeText" class="form-control form-control-lg"
+                              value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                            <label class="form-label" for="typeText">Cvv</label>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <p class="mb-5">THE COMPANY MAKES NO WARRANTIES REGARDING THE PERFORMANCE OR OPERATION OF THIS WEBSITE <a
+                          href="#!">Click to learn more</a>.</p>
+    
+                      <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
+                          <br>
+                      <h5 class="fw-bold mb-5" style="position: absolute; bottom: 6;">
+                        <a href="bodysuits"><i class="fa fa-angle-left"></i>Back to shopping</a>
+                      </h5>
+    
+                    </form>
+    
+                  </div>
+                </div>
+    
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
-</html>
+    </section>
+</div>
