@@ -34,17 +34,26 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedTshirt.pname"></h5>             
+                        <div style="padding-bottom: 1rem;">
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedTshirt.pname"style="font-weight: bold;text-align: center;font-size: 2rem;" ></h5>            
                           <span class="d-block" alt="" >  
-                            <img src={{selectedTshirt.imageUrl}} >
+                            <img src={{selectedTshirt.imageUrl}} style=" display: block;
+                            margin-left: auto;
+                            margin-right: auto;" >
                           </span>
+                          <hr style=" height: 0px;border: none;border-top: 3px solid black;">
                           <!-- view details -->
                           <div class="container-fluid">
                               <p class="font-weight-bold">PRICE <br>{{selectedTshirt.price}}</p>
+                              <hr style=" height: 0px;border: none;border-top: 1px solid black;">
                               <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedTshirt.type}}</p>
+                              <hr style=" height: 0px;border: none;border-top: 1px solid black;">
                               <p class="font-weight-bold">MATERIAL<br>{{selectedTshirt.material}}</p>
+                              <hr style=" height: 0px;border: none;border-top: 1px solid black;">
                               <p class="font-weight-bold">TYPE OF WASHING<br>{{selectedTshirt.wash}}</p>
+                              <hr style=" height: 0px;border: none;border-top: 1px solid black;">
                           </div>
+                        </div>
                       </div>
                   </div>
               </div>

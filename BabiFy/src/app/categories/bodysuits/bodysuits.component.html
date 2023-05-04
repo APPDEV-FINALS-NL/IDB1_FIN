@@ -34,17 +34,21 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title"  id="exampleModalLabel" [innerText]="'Details of ' + selectedBodysuit.pname  "></h5>             
+                        <h5 class="modal-title"  id="exampleModalLabel" [innerText]="'Details of ' + selectedBodysuit.pname  "style="font-weight: bold;text-align: center;font-size: 2rem;" ></h5>          
                           <span class="d-block" alt="" >  
-                            <img src={{selectedBodysuit.imageUrl}} >
+                            <img src={{selectedBodysuit.imageUrl}} style=" display: block;
+                            margin-left: auto;
+                            margin-right: auto;width: 42rem;height: 30rem;" >
                           </span>
                           <!-- view details -->
-                          <div class="container-fluid">
+                       
+                          <div class="container-fluid" >
                               <p class="font-weight-bold">PRICE <br>{{selectedBodysuit.price}}</p>
                               <p class="font-weight-bold">COLOR <br>{{selectedBodysuit.color}}</p>
                               <p class="font-weight-bold">MATERIAL<br>{{selectedBodysuit.material}}</p>
                               <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedBodysuit.type}}</p>
-                          </div>
+                       
+                        </div>
                       </div>
                   </div>
               </div>

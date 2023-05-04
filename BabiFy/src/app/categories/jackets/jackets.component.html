@@ -34,9 +34,11 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedJacket.pname"></h5>             
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedJacket.pname"style="font-weight: bold;text-align: center;font-size: 2rem;" ></h5>            
                           <span class="d-block" alt="" >  
-                            <img src={{selectedJacket.imageUrl}} >
+                            <img src={{selectedJacket.imageUrl}} style=" display: block;
+                            margin-left: auto;
+                            margin-right: auto;width: 42rem;height: 30rem;" >
                           </span>
                           <!-- view details -->
                           <div class="container-fluid">

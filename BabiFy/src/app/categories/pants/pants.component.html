@@ -34,9 +34,12 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
+                        <div style="padding-bottom: 1rem;">
                         <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedPant.pname"></h5>             
                           <span class="d-block" alt="" >  
-                            <img src={{selectedPant.imageUrl}} >
+                            <img src={{selectedPant.imageUrl}}  style=" display: block;
+                            margin-left: auto;
+                            margin-right: auto;" >
                           </span>
                           <!-- view details -->
                           <div class="container-fluid">

@@ -36,9 +36,12 @@
                         </button>
                       </div>
                       <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"></h5>             
+                        <div style="padding-bottom: 1rem;">
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"style="font-weight: bold;text-align: center;font-size: 2rem;" ></h5>            
                           <span class="d-block" alt="" >  
-                            <img src={{selectedBib.imageUrl}} >
+                            <img src={{selectedBib.imageUrl}} style=" display: block;
+                            margin-left: auto;
+                            margin-right: auto;width: 42rem; height: 30rem;" >
                           </span>
                           <!-- view details -->
                           <div class="container-fluid">
@@ -50,6 +53,7 @@
                               <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedBib.type}}</p>
                               <p class="font-weight-bold">PATTERN<br>{{selectedBib.pattern}}</p>
                           </div>
+                        </div>
                       </div>
                   </div>
               </div>
