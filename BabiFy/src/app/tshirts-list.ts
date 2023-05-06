@@ -48,7 +48,7 @@ export const TSHIRTS: Tshirt[]=[
 },
 {
     id: 6,
-    pname: 'Hanes Baby T-Shirt, Flexy Soft Stretch Shirt',
+    pname: 'Hanes Baby Stretch Shirt',
     price: '₱900',
     type: 'Pull On closure',
     material: '60% Cotton, 37% Polyester, 3% Spandex',
@@ -57,7 +57,7 @@ export const TSHIRTS: Tshirt[]=[
 },
 {
     id: 7,
-    pname: 'Gerber Baby Girls 3-Pack Short Sleeve Tees',
+    pname: 'Gerber Sleeve Shirt',
     price: '₱960',
     type: 'Pull On closure',
     material: '100% cotton jersey; neckline: 97% cotton, 3% spandex rib',
@@ -66,7 +66,7 @@ export const TSHIRTS: Tshirt[]=[
 },
 {
     id: 8,
-    pname: 'Boys Short-Sleeve Pocket Henley Tee Shirt',
+    pname: 'Boys Short-Sleeve Shirt',
     price: '₱1360',
     type: 'Button closure',
     material: '100% Cotton',

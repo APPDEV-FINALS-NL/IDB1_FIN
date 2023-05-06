@@ -39,7 +39,7 @@ export const BODYSUITS: Bodysuit[]=[
 },
 {
     id: 5,
-    pname: 'Summer Short Sleeve Bowtie Bodysuit + Suspender ',
+    pname: 'Summer Short Sleeve Bowtie Bodysuit',
     price: '₱520',
     color: 'Blue',
     material: 'Cotton',

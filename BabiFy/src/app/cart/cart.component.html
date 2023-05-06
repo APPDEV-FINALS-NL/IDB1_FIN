@@ -1,156 +1,118 @@
-<div id="id02" class="modal">
-                        
-  <section class="h-50 h-custom" style="background-color: #eee;">
-      <div class="container h-50 py-3">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+        BABIFY Shopping Cart
+        </h5>
+        <a href="home">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </a>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="assets/hats/hat1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Knot Beanie Hats Soft for Infant Baby</td>
+              <td>₱569</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+              <td>₱569</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <span class="material-symbols-outlined" style="color: rgb(255, 255, 255);">
+                    delete
+                  </span>
+                </a>
+              </td>
               
-            <div class="card shopping-cart" style="border-radius: 15px;">
-              
-              <div class="card-body text-black">
-                
-                <div class="row">
-                  <header style="background-color:#1cb2ba;color:#fff;">
-                      <span onclick="document.getElementById('id02').style.display='none'" class="close-button topright">&times;</span>
-                    </header>
-                  <div class="col-lg-6 px-5 py-4">
-    
-                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">List in your Cart</h3>
-    
-                    <div class="d-flex align-items-center mb-5">
-                      <div class="flex-shrink-0">
-                        <img src="assets/bodysuits/suit1.jpg"
-                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                      </div>
-                      <div class="flex-grow-1 ms-3">
-                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                        <h5 class="text-primary">The Peanutshell Newborn Layette Gift</h5>
-                        <h6 style="color: #9e9e9e;">Color: Assorted</h6>
-                        <div class="d-flex align-items-center">
-                          <p class="fw-bold mb-0 me-5 pe-3">₱1,200</p>
-                          <div class="def-number-input number-input safari_only">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                              class="minus"></button>
-                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
-                              type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                              class="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="d-flex align-items-center mb-5">
-                      <div class="flex-shrink-0">
-                        <img src="assets/blankets/blanket1.jpg"
-                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                      </div>
-                      <div class="flex-grow-1 ms-3">
-                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                        <h5 class="text-primary">Baby Want Designs Baby Swaddle Blanket</h5>
-                        <h6 style="color: #9e9e9e;">Color: Dusty Rose</h6>
-                        <div class="d-flex align-items-center">
-                          <p class="fw-bold mb-0 me-5 pe-3">₱420</p>
-                          <div class="def-number-input number-input safari_only">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                              class="minus"></button>
-                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
-                              type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                              class="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="d-flex align-items-center mb-5">
-                      <div class="flex-shrink-0">
-                        <img src="assets/bibs/bib1.jpg"
-                          class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
-                      </div>
-                      <div class="flex-grow-1 ms-3">
-                        <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
-                        <h5 class="text-primary">Silicone Baby Bibs Easily Wipe Clean</h5>
-                        <h6 style="color: #9e9e9e;">Color:Turquoise/Lime Green</h6>
-                        <div class="d-flex align-items-center">
-                          <p class="fw-bold mb-0 me-5 pe-3">₱199</p>
-                          <div class="def-number-input number-input safari_only">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                              class="minus"></button>
-                            <input class="quantity fw-bold text-black" min="0" name="quantity" value="2"
-                              type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                              class="plus"></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
-    
-                    <div class="d-flex justify-content-between px-x">
-                      <p class="fw-bold">Discount:</p>
-                      <p class="fw-bold">None</p>
-                    </div>
-                    <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
-                      <h5 class="fw-bold mb-0">Total:</h5>
-                      <h5 class="fw-bold mb-0">2,018</h5>
-                    </div>
-    
-                  </div>
-                  <div class="col-lg-6 px-5 py-4">
-    
-                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
-    
-                    <form class="mb-5">
-    
-                      <div class="form-outline mb-5">
-                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                          value="xxxx xxxx xxxx xxxx" minlength="19" maxlength="19" />
-                        <label class="form-label" for="typeText">Card Number</label>
-                      </div>
-    
-                      <div class="form-outline mb-5">
-                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                          value="Nic Laroya" />
-                        <label class="form-label" for="typeName">Name on card</label>
-                      </div>
-    
-                      <div class="row">
-                        <div class="col-md-6 mb-5">
-                          <div class="form-outline">
-                            <input type="text" id="typeExp" class="form-control form-control-lg" value="01/22"
-                              size="7" id="exp" minlength="7" maxlength="7" />
-                            <label class="form-label" for="typeExp">Expiration</label>
-                          </div>
-                        </div>
-                        <div class="col-md-6 mb-5">
-                          <div class="form-outline">
-                            <input type="password" id="typeText" class="form-control form-control-lg"
-                              value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                            <label class="form-label" for="typeText">Cvv</label>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <p class="mb-5">THE COMPANY MAKES NO WARRANTIES REGARDING THE PERFORMANCE OR OPERATION OF THIS WEBSITE <a
-                          href="#!">Click to learn more</a>.</p>
-    
-                      <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
-                          <br>
-                      <h5 class="fw-bold mb-5" style="position: absolute; bottom: 6;">
-                        <a href="bodysuits"><i class="fa fa-angle-left"></i>Back to shopping</a>
-                      </h5>
-    
-                    </form>
-    
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-          </div>
+            </tr>
+            <tr>
+              <td class="w-25">
+                  <img src="assets/bibs/bib1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>Silicone Baby Bibs Easily Wipe Clean</td>
+                <td>₱199</td>
+                <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                <td>₱398</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <span class="material-symbols-outlined" style="color: rgb(255, 255, 255);">
+                      delete
+                    </span>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+              <td class="w-25">
+                  <img src="assets/blankets/blanket1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>Baby Want Designs Baby Swaddle Blanket</td>
+                <td>₱420</td>
+                <td class="qty"><input type="text" class="form-control" id="input1" value="4"></td>
+                <td>₱1,680</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <span class="material-symbols-outlined" style="color: rgb(255, 255, 255);">
+                      delete
+                    </span>
+                  </a>
+                </td>
+            </tr>
+            <tr>
+              <td class="w-25">
+                  <img src="assets/bodysuits/suit1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>The Peanutshell Newborn Layette Gift</td>
+                <td>₱1,200</td>
+                <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+                <td>₱1,200</td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <span class="material-symbols-outlined" style="color: rgb(255, 255, 255);">
+                      delete
+                    </span>
+                  </a>
+                </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-success">₱3,847</span></h5>
         </div>
       </div>
-    </section>
-</div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <a href="home">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </a>      
+        <a href="buynow">
+          <button type="button" class="btn btn-success">Check Out</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

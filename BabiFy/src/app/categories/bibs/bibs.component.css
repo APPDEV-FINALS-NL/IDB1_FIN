@@ -1,15 +1,23 @@
 body{
-    font-family: tahoma;
+    font-family: Tahoma;
+    /* The image used */
+    background: url("https://media.glamour.com/photos/63a34e7159865935c710d67f/1:1/w_1714,h_1714,c_limit/affordable%20baby%20clothes.png");
 }
 .card{
-    max-width:21rem;
-    min-height:30rem;
+    max-width:20rem;
+    min-height:25rem;
+    margin: 8px;
 }
 button{
-    margin-left: 1rem;
+    margin:1rem;
 }
-
 .modal-header{
     background-color:#1cb2ba
-  }
-  
+}
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.stars{
+    color:var(--orange);
+}

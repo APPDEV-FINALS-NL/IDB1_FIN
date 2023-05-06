@@ -9,7 +9,7 @@
 <body>
     <nav class="container-fluid navbar navbar-expand-sm py-1 navbar-dark bg-info">
         <a class="navbar-brand" routerLink="home">
-            <img src="assets/logo.png" width="80" height="55" alt="">
+            <img src="assets/logo.png" width="80" height="50" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,66 +18,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search item" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                  </form>
               </li>
             </ul>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >           
             <ul class="navbar-nav ml-auto">
-
-<!--------------------------------------------------------CART LOGO------------------------------------------------------------------------>          
-
-               
-                 
-               
-                    <div class="btn-group">
-                      <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; "><span class="material-symbols-outlined text-dark">
-                        shopping_cart</span>Cart</button>
-                      <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <div class="dropdown-menu">
-                       
-                      
-                          <button onclick="document.getElementById('id01').style.display='block'" style="width: 10rem; margin: 2px;"><span class="material-symbols-outlined text-dark"> person
-                          </span>Account</button>
-                          <br>
-                          <button onclick="document.getElementById('id03').style.display='block'" style="width: 10rem; margin: 2px"><span class="material-symbols-outlined text-dark"> person
-                          </span>Sign-in</button>
-                      </div>
-               
-            
-            
+              <a href="cart">
+                <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+                shopping_cart
+                </span>
+              </a>
+              <a routerLink="account">
+                <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+                person
+                </span>
+              </a>
+            </ul>
         </div>
-        <!--    
-           <td>
-                <button onclick="document.getElementById('id02').style.display='block'" style="width: auto; "><span class="material-symbols-outlined text-dark">
-                    shopping_cart</span>Cart</button></td>
-                
-          
-          <div class="navbar-nav ml-auto">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width: 10rem; margin: 2px;"><span class="material-symbols-outlined text-dark"> person
-            </span>Account</button>
-            <br>
-            <button onclick="document.getElementById('id03').style.display='block'" style="width: 10rem; margin: 2px"><span class="material-symbols-outlined text-dark"> person
-            </span>Sign-in</button>
-          </div>
-          -->
+    </nav>
 
-
-
-
-
-
-
-        
-   <!--Their modals-->
-   <div class="app-login"></div>
-   <div class="app-cart"></div>
-   <div class="app-sign-in"></div>
+</body>
+</html>

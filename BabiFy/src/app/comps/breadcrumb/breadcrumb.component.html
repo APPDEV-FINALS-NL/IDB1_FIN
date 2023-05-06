@@ -1,2 +1,36 @@
-<div class="app-categories"><!--Categories Component--></div>
-<div class="app-cartt"><!--Navbar component (Buy now component)--></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light justify-content-start">
+    <a class="nav-link" routerLink="home">
+      <span class="material-symbols-outlined">
+      home
+      </span>
+    </a>
+    <a class="nav-link dropdown-toggle " routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      All Categories
+    </a>
+    <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" routerLink="bodysuits">Bodysuits</a>
+      <a class="dropdown-item" routerLink="bibs">Bibs</a>
+      <a class="dropdown-item" routerLink="mittens">Mittens</a>
+      <a class="dropdown-item" routerLink="hats">Hats</a>
+      <a class="dropdown-item" routerLink="blankets">Blankets</a>
+      <a class="dropdown-item" routerLink="diapers">Cloth Diaper</a>
+      <a class="dropdown-item" routerLink="pants">Pants</a>
+      <a class="dropdown-item" routerLink="shirts">T-Shirts</a>
+      <a class="dropdown-item" routerLink="jackets">Jackets</a>
+    </div>
+    <a class="nav-link" routerLink="contact">Contact Us</a>
+    <a class="nav-link" routerLink="about">About Us</a>
+    <a class="nav-link" routerLink="references">References</a>
+</nav>
+
+</body>
+</html>

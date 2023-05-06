@@ -3,98 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="widTh=device-widTh, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>tshirts</title>
 </head>
 <body>
   <div class="col-12">
     <div class="row align-items-start">
       <div class="card" *ngFor="let tshirt of tshirts">
-        <img class="card-img-top" [src]="tshirt.imageUrl" widTh="170" height="330" alt="Card image cap">
+        <img class="card-img-top" [src]="tshirt.imageUrl" width="170" height="320" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{tshirt.pname | uppercase}}</h5>
             <a type="button" routerLink="/tshirt/{{tshirt.id}}" class="text-white" [class.selected]="tshirt === selectedTshirt" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(tshirt)">
-              <a href="">View More</a>
+              <a href="">View more...</a>
               </a>
+              <div class="stars">               
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
               <div>
-                <div style="background-color: #ffffff; padding: 2rem">
-                  <button type="button"data-toggle="modal" data-target="#cartModal1" class="btn btn-warning" (click)="onSelect(tshirt)"routerLink="/tshirt/{{tshirt.id}}">
+                <div style="background-color: #ffffff;">
+                  <button type="button"data-toggle="modal" data-target="#cartModal" class="btn btn-warning" (click)="onSelect(tshirt)"routerLink="/tshirt/{{tshirt.id}}">
                     Add to Cart
                   </button> 
-               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
-                    Buy Now
-                  </button>  </div>
-                <!-- Modal -->
-                <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedTshirt">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header bg-info">
-                        <button type="button" class="close" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedTshirt.pname"></h5>             
-                          <span class="d-block" alt="" >  
-                            <img src={{selectedTshirt.imageUrl}} >
-                          </span>
-                          <!-- view details -->
-                          <div class="container-fluid">
-                              <p class="font-weight-bold">PRICE <br>{{selectedTshirt.price}}</p>
-                              <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedTshirt.type}}</p>
-                              <p class="font-weight-bold">MATERIAL<br>{{selectedTshirt.material}}</p>
-                              <p class="font-weight-bold">TYPE OF WASHING<br>{{selectedTshirt.wash}}</p>
-                          </div>
-                      </div>
-                  </div>
+                  <a href="buynow">
+                    <button type="button" class="btn btn-success">
+                      Buy Now
+                    </button> 
+                  </a>                 
+                </div>
               </div>
-            </div>
+                
+              <!-- Modal -->
+              <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedTshirt">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header bg-info">
+                      <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body text-dark bg-light">
+                      <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedTshirt.pname"></h5>             
+                        <span class="d-block" alt="" >  
+                          <img src={{selectedTshirt.imageUrl}} style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
+                        </span>
+                        <!-- view details -->
+                        <div class="container-fluid">
+                          <p class="font-weight-bold">PRICE <br>{{selectedTshirt.price}}</p>
+                          <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedTshirt.type}}</p>
+                          <p class="font-weight-bold">MATERIAL<br>{{selectedTshirt.material}}</p>
+                          <p class="font-weight-bold">TYPE OF WASHING<br>{{selectedTshirt.wash}}</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- add to cart -->
+  <div class="modal fade" id="cartModal" tabindex="-1"data-toggle="modal" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedTshirt">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+          BabiFy Shopping Cart
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-image">
+            <thead>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </thead>
+              
+            <tr>
+              <td class="w-25">
+                <img src="{{selectedTshirt.imageUrl}}" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>{{selectedTshirt.pname}}</td>
+              <td>{{selectedTshirt.price}}</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+              <td>{{selectedTshirt.price}}</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </table> 
+          <div class="modal-footer border-top-0 d-flex justify-content-between">
+            <a href="Tshirts">
+              <button type="button" class="btn btn-secondary">Close</button>           
+            </a>           
+            <a href="cart">
+              <button type="button" class="btn btn-warning">Add To Cart</button>
+            </a>            
           </div>
         </div>
-  
+      </div>
+    </div>
+</div>
 
-
-      
-  
-        <div class="modal fade" id="cartModal1" tabindex="-1"data-toggle="modal" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedTshirt">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header border-bottom-0">
-                <h5 class="modal-title" id="exampleModalLabel">
-                 BABIFY Shopping Cart
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <table class="table table-image">
-               
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">Product</th>
-                      <th scope="col">Price</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Total</th>
-                      <th scope="col">Actions</th>
-                    </tr>
-                  
-                  
-                    <tr>
-                      <td class="w-25">
-                        <img src="{{selectedTshirt.imageUrl}}" class="img-fluid img-thumbnail" alt="Sheep">
-                      </td>
-                      <td>{{selectedTshirt.pname}}</td>
-                      <td>{{selectedTshirt.price}}</td>
-                      <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
-                      <td>{{selectedTshirt.price}}</td>
-                      <td>
-                        <a href="#" class="btn btn-danger btn-sm">
-                          <i class="fa fa-times"></i>
-                        </a>
-                      </td>
-                      </tr>
-                    </table> 
-                    <div class="modal-footer border-top-0 d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Add To Cart</button></div>
+</body>
+</html>

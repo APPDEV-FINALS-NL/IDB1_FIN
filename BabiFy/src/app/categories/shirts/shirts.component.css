@@ -1,44 +1,22 @@
 body{
-    font-family: tahoma;
+  font-family: tahoma;
+  background: url("https://media.glamour.com/photos/63a34e7159865935c710d67f/1:1/w_1714,h_1714,c_limit/affordable%20baby%20clothes.png");
 }
 .card{
-    max-width:21rem;
-    min-height:30rem;
+  max-width:20rem;
+  min-height:25rem;
+  margin: 8px;
 }
 button{
-    margin-left: 1rem;
+  margin:1rem;
 }
-
-.container {
-    padding: 2rem 0rem;
-  }
-  
-  .table-image {
-    
-   
-        border: 0;
-        color: #666;
-        font-size: 0.8rem;
-      }
-
-    
-    td, th {
-      vertical-align: middle;
-      text-align: center;
-      
-  
-    }
-  
-  
-  .price {
-    margin-left: 1rem;
-  }
-  
-  .modal-footer {
-    padding-top: 3rem;
-  }
-
-  .modal-header{
-    background-color:#1cb2ba
-  }
-  
+.modal-header{
+  background-color:#1cb2ba
+}
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.stars{
+  color:var(--orange);
+}

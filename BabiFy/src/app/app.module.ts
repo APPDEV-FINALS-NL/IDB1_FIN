@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './comps/navbar/navbar.component';
-import { SignInComponent } from './comps/sign-in/sign-in.component';
-import { LoginComponent } from './comps/login/login.component';
 import { HomeComponent } from './comps/home/home.component';
+import { AccountComponent } from './comps/account/account.component';
 import { FooterComponent } from './comps/footer/footer.component';
 import { AboutComponent } from './comps/about/about.component';
 import { BreadcrumbComponent } from './comps/breadcrumb/breadcrumb.component';
+import { ContactComponent } from './comps/contact/contact.component';
+import { ReferencesComponent } from './comps/references/references.component';
 import { BodysuitsComponent } from './categories/bodysuits/bodysuits.component';
 import { BibsComponent } from './categories/bibs/bibs.component';
 import { MittensComponent } from './categories/mittens/mittens.component';
@@ -19,18 +21,18 @@ import { PantsComponent } from './categories/pants/pants.component';
 import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
-import { CategoriesComponent } from './categories/categories.component';
 import { CartComponent } from './cart/cart.component';
-import { CarttComponent } from './comps/navbar/buy now/cartt.component';
+import { BuynowComponent } from './buynow/buynow.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SignInComponent,
-    LoginComponent,
     HomeComponent,
+    AccountComponent,
     FooterComponent,
     AboutComponent,
     BreadcrumbComponent,
@@ -43,13 +45,15 @@ import { CarttComponent } from './comps/navbar/buy now/cartt.component';
     ShirtsComponent,
     JacketsComponent,
     DiapersComponent,
-    CategoriesComponent,
     CartComponent,
-    CarttComponent,
+    ContactComponent,
+    ReferencesComponent,
+    BuynowComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

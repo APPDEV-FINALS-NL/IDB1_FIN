@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>	
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName" required="">
+					<input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email" required="">
+					<input type="password" name="pswd" placeholder="Password" [(ngModel)]="signupObj.password" required="">
+					<button (click)="onSignUp()">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login here</label>
+					<input type="email" name="email" placeholder="Email" [(ngModel)]="loginObj.email" required="">
+					<input type="password" name="pswd" placeholder="Password" [(ngModel)]="loginObj.password" required="">
+					<button (click)="onLogin()">Login</button>
+					<span class="psw">Forgot <a href="account">password?</a></span><br>
+					<span class="new">Don't have an account yet? <a href="account">Create one.</a></span>
+				</form>
+			</div>
+	</div>
+    <div class="text" style="background-image: url(https://img.freepik.com/premium-photo/baby-natural-material-clothes-concept-baby-clothes-shoes-neutral-background-with-blank-space-text-top-view-flat-lay_101906-842.jpg?w=360); height: 500px; width: 60%">
+		<h1>WELCOME</h1>
+		<h4>BabiFy Baby Apparel Shop</h4>
+	</div>
+</body>
+</html>

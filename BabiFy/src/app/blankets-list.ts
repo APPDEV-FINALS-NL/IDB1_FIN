@@ -43,7 +43,7 @@ export const BLANKETS: Blanket[]=[
 },
 {
     id: 5,
-    pname: 'Konssy Waffle Baby Blankets, Nursery Blankets',
+    pname: 'Konssy Waffle Baby Nursery Blankets',
     price: '₱399',
     material: '50% cotton 50% bamboo',
     color: 'Oat',

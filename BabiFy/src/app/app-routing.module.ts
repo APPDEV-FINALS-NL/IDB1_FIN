@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignInComponent } from './comps/sign-in/sign-in.component';
-import { LoginComponent } from './comps/login/login.component';
+
 import { HomeComponent } from './comps/home/home.component';
+import { AccountComponent } from './comps/account/account.component';
 import { FooterComponent } from './comps/footer/footer.component';
 import { AboutComponent } from './comps/about/about.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { ContactComponent } from './comps/contact/contact.component';
+import { ReferencesComponent } from './comps/references/references.component';
 import { BodysuitsComponent } from './categories/bodysuits/bodysuits.component';
 import { BibsComponent } from './categories/bibs/bibs.component';
 import { MittensComponent } from './categories/mittens/mittens.component';
@@ -16,15 +17,16 @@ import { ShirtsComponent } from './categories/shirts/shirts.component';
 import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
-import { CarttComponent } from './comps/navbar/buy now/cartt.component';
+import { BuynowComponent } from './buynow/buynow.component';
 
 
 const routes: Routes = [
-  { path:'sign-in', component: SignInComponent},
-  { path:'login', component: LoginComponent},
+  { path:'account', component: AccountComponent},
   { path:'home', component: HomeComponent},
   { path:'footer', component: FooterComponent},
   { path:'about', component: AboutComponent},
+  { path:'contact', component: ContactComponent},
+  { path:'references', component: ReferencesComponent},
   { path:'bodysuits', component: BodysuitsComponent},
   { path:'bibs', component: BibsComponent},
   { path:'mittens', component: MittensComponent},
@@ -35,7 +37,7 @@ const routes: Routes = [
   { path:'jackets', component: JacketsComponent},
   { path:'diapers', component: DiapersComponent},
   { path:'cart', component:  CartComponent},
-  { path: 'cartt', component: CarttComponent}
+  { path: 'buynow', component: BuynowComponent}
 ];
 
 
