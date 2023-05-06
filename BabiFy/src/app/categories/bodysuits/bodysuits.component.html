@@ -31,7 +31,6 @@
                   <button type="button"data-toggle="modal" data-target="#cartModal" class="btn btn-warning" (click)="onSelect(bodysuit)"routerLink="/bodysuit/{{bodysuit.id}}">
                     Add to Cart
                   </button> 
-<<<<<<< HEAD
                   <a href="buynow">
                     <button type="button" class="btn btn-success">
                       Buy Now
@@ -64,38 +63,6 @@
                     </div>
                   </div>
                 </div>
-=======
-               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
-                    Buy Now
-                  </button></div>
-                <!-- Modal -->
-                <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedBodysuit">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header bg-info">
-                        <button type="button" class="close" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title"  id="exampleModalLabel" [innerText]="'Details of ' + selectedBodysuit.pname  "style="font-weight: bold;text-align: center;font-size: 2rem;" ></h5>          
-                          <span class="d-block" alt="" >  
-                            <img src={{selectedBodysuit.imageUrl}} style=" display: block;
-                            margin-left: auto;
-                            margin-right: auto;width: 42rem;height: 30rem;" >
-                          </span>
-                          <!-- view details -->
-                       
-                          <div class="container-fluid" >
-                              <p class="font-weight-bold">PRICE <br>{{selectedBodysuit.price}}</p>
-                              <p class="font-weight-bold">COLOR <br>{{selectedBodysuit.color}}</p>
-                              <p class="font-weight-bold">MATERIAL<br>{{selectedBodysuit.material}}</p>
-                              <p class="font-weight-bold">CLOSURE TYPE<br>{{selectedBodysuit.type}}</p>
-                       
-                        </div>
-                      </div>
-                  </div>
->>>>>>> efb5b01a6373986c8356b351af99f17b9cb37773
               </div>
           </div>
       </div>
