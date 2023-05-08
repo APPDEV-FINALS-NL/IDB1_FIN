@@ -1,0 +1,22 @@
+<div class="container" *ngIf="selectedCategory">
+    <div class="mb-3 row">
+        <label for="staticId" class="col-sm-2 col -from-label">Category ID</label>
+        <div class="col-sm-10">
+            <input readonly class="form-control-plaintext" id="staticId" [(ngModel)]="selectedCategory.id">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="exampleFormControlFile1" class="col-sm-2 col-form-label">Photo</label>
+        <div class="col-sm-10">
+            <img src="{{selectedCategory.imageUrl}}" class="img-thumbnail" alt="...">
+            <input type="file" class="form-contol-file" id="exampleFormControlFile1">
+        </div>
+    </div>
+    <div class="mb-3 row">
+
+    </div>
+                    
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" >Close</button>
+            </div>

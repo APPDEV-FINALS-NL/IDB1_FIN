@@ -23,6 +23,8 @@ import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
 import { BuynowComponent } from './buynow/buynow.component';
+import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { CategoriesDetailsComponent } from './categories-details/categories-details.component';
 
 
 
@@ -49,6 +51,8 @@ import { BuynowComponent } from './buynow/buynow.component';
     ContactComponent,
     ReferencesComponent,
     BuynowComponent,
+    CategoriesListComponent,
+    CategoriesDetailsComponent,
   ],
   imports: [
     BrowserModule,

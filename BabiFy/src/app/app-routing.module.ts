@@ -18,6 +18,8 @@ import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
 import { BuynowComponent } from './buynow/buynow.component';
+import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { CategoriesDetailsComponent } from './categories-details/categories-details.component';
 
 
 const routes: Routes = [
@@ -38,7 +40,9 @@ const routes: Routes = [
   { path:'jackets', component: JacketsComponent},
   { path:'diapers', component: DiapersComponent},
   { path:'cart', component:  CartComponent},
-  { path: 'buynow', component: BuynowComponent}
+  { path: 'buynow', component: BuynowComponent},
+  { path: 'categories-list', component: CategoriesListComponent},
+  { path: 'categories-details', component: CategoriesDetailsComponent},
 ];
 
 
