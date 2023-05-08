@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +23,9 @@ import { JacketsComponent } from './categories/jackets/jackets.component';
 import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
 import { BuynowComponent } from './buynow/buynow.component';
+import { AcclistsComponent } from './comps/acclists/acclists.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -49,11 +52,17 @@ import { BuynowComponent } from './buynow/buynow.component';
     ContactComponent,
     ReferencesComponent,
     BuynowComponent,
+    AcclistsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
