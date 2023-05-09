@@ -51,11 +51,10 @@
                       <div class="modal-body text-dark bg-light">
                         <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"></h5>             
                           <span class="d-block" alt="" >  
-                            <img src={{selectedBib.imageUrl}} >
+                            <img src={{selectedBib.imageUrl}} style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
                           </span>
                           <!-- view details -->
-                          <div class="container-fluid">
-                            
+                          <div class="container-fluid">                           
                               <p class="font-weight-bold">PRICE <br>{{selectedBib.price}}</p>
                               <p class="font-weight-bold">COLOR <br>{{selectedBib.color}}</p>
                               <p class="font-weight-bold">MATERIAL<br>{{selectedBib.material}}</p>
@@ -72,7 +71,8 @@
       </div>
     </div>
 
-  <div class="modal fade" id="cartModal1" tabindex="-1"data-toggle="modal" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedBib">
+  <!-- add to cart -->
+  <div class="modal fade" id="cartModal" tabindex="-1"data-toggle="modal" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedBib">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
@@ -121,6 +121,6 @@
       </div>
     </div>
   </div>
-  
+
 </body>
 </html>

@@ -1,52 +1,44 @@
 {
   "posts": [
     {
-      "productID": null,
-      "productName": null,
-      "productColor": null,
-      "productMaterial": null,
-      "productPrice": null,
-      "id": 5
+      "categoryId": null,
+      "name": "Bibs",
+      "description": "A bib is a small piece of fabric that's tied under a baby's chin to keep food or milk from staining her clothes.",
+      "pRange": "₱350 - ₱1200",
+      "aRange": "0-18 months",
+      "imageUrl": null,
+      "id": 1,
+      "dateAdded": "2023-05-09"
     },
     {
-      "productID": 3,
-      "productName": "qwe",
-      "productColor": "wqeqw",
-      "productMaterial": "23",
-      "productPrice": "qwewqe",
-      "id": 8
+      "categoryId": "",
+      "name": "Bodysuits",
+      "description": "A bodysuit is a one-piece form-fitting or skin-tight garment that covers the torso and the crotch, and sometimes the legs, hands, and feet, and cannot be used as a swimsuit.",
+      "pRange": "₱360 - ₱1780",
+      "aRange": "0-24 months",
+      "imageUrl": "",
+      "dateAdded": "2023-05-07",
+      "id": 2
     },
     {
-      "productID": "",
-      "productName": "",
-      "productColor": "",
-      "productMaterial": "",
-      "productPrice": "",
-      "id": 9
+      "categoryId": null,
+      "name": "Mittens",
+      "description": "Mittens feature an elastic cuff to keep them securely on baby's hands.",
+      "pRange": "₱200 - ₱990",
+      "aRange": "0-5 months",
+      "imageUrl": null,
+      "dateAdded": "2023-05-06",
+      "id": 3
     },
     {
-      "productID": null,
-      "productName": null,
-      "productColor": null,
-      "productMaterial": null,
-      "productPrice": null,
-      "id": 10
-    },
-    {
-      "productID": null,
-      "productName": null,
-      "productColor": null,
-      "productMaterial": null,
-      "productPrice": null,
-      "id": 11
-    },
-    {
-      "productID": null,
-      "productName": null,
-      "productColor": null,
-      "productMaterial": null,
-      "productPrice": null,
-      "id": 12
+      "categoryId": "",
+      "name": "Cloth Diaper",
+      "description": "Usually made of absorbent cotton, bamboo, or hemp, fitted cloth baby diapers have a contour shape similar to a disposable diaper, with elastic or gathered edges at the legs and back to contain messes.",
+      "pRange": "₱280 - ₱1500",
+      "aRange": "0-11 months",
+      "imageUrl": "",
+      "dateAdded": "2023-05-08",
+      "id": 4
     }
   ],
   "comments": [],

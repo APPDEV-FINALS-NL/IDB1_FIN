@@ -1,10 +1,10 @@
 export class AcclistsModel{
-  
-    productID: number= 0;
-    productName: string='';
-    productColor: string='';
-    productMaterial: string='';
-    productPrice: string='';
+    categoryId: number = 0;
+    name: string='';
+    description: string='';
+    dateAdded!: Date;
+    pRange: string='';
+    aRange: string='';
+    imageUrl: string='';
     id: any;
-
 }

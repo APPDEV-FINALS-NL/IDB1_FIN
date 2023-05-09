@@ -22,8 +22,9 @@ import { AcclistsComponent } from './comps/acclists/acclists.component';
 
 
 const routes: Routes = [
-  { path:'account', component: AccountComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path:'home', component: HomeComponent},
+  { path:'account', component: AccountComponent},
   { path:'footer', component: FooterComponent},
   { path:'about', component: AboutComponent},
   { path:'contact', component: ContactComponent},
