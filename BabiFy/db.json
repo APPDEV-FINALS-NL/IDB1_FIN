@@ -1,12 +1,52 @@
 {
   "posts": [
     {
-      "productID": "23",
+      "productID": null,
+      "productName": null,
+      "productColor": null,
+      "productMaterial": null,
+      "productPrice": null,
+      "id": 5
+    },
+    {
+      "productID": 3,
       "productName": "qwe",
-      "productColor": "qwe",
-      "productMaterial": "qwe",
-      "productPrice": "15k",
-      "id": 3
+      "productColor": "wqeqw",
+      "productMaterial": "23",
+      "productPrice": "qwewqe",
+      "id": 8
+    },
+    {
+      "productID": "",
+      "productName": "",
+      "productColor": "",
+      "productMaterial": "",
+      "productPrice": "",
+      "id": 9
+    },
+    {
+      "productID": null,
+      "productName": null,
+      "productColor": null,
+      "productMaterial": null,
+      "productPrice": null,
+      "id": 10
+    },
+    {
+      "productID": null,
+      "productName": null,
+      "productColor": null,
+      "productMaterial": null,
+      "productPrice": null,
+      "id": 11
+    },
+    {
+      "productID": null,
+      "productName": null,
+      "productColor": null,
+      "productMaterial": null,
+      "productPrice": null,
+      "id": 12
     }
   ],
   "comments": [],

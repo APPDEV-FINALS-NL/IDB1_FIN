@@ -8,7 +8,11 @@ import { ApiService } from '../shared/shared/api.service';
   styleUrls: ['./acclists.component.css']
 })
 export class AcclistsComponent  implements OnInit{
+
+
+  selectedProd?:AcclistsModel;
   
+
   formValue !:FormGroup;
   acclistsModelObj: AcclistsModel = new AcclistsModel();
   acclistsData !:any;
@@ -42,7 +46,7 @@ export class AcclistsComponent  implements OnInit{
       this.getAllProducts();
     },
     err=>{
-      alert("Wrong")
+      alert("Something Went Wrong")
     })
   }
   
@@ -54,11 +58,17 @@ getAllProducts(){
 
 }
 deleteProducts(row : any){
-  this.api.deleteProducts(row.id)
-  .subscribe(res=>{
-    alert("Product Deleted")
-    this.getAllProducts();
-  })
+
+			if (confirm("Do you want to delete this Product?") == true) {
+        this.api.deleteProducts(row.id)
+        .subscribe(res=>{
+          let ref =document.getElementById('cancel2')
+            ref?.click();
+          this.getAllProducts();
+        })
+			} else { this.getAllProducts();
+			}
+  
 }
 onEdit(row: any){
   this.acclistsModelObj.id = row.id;

@@ -1,44 +1,45 @@
-<nav class="navbar navbar-light bg-primary">
+<nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <h1 style="color:aliceblue">Product List</h1>
+        <h1 style="color:#007bff">Product List</h1>
         <div class="d-flex">
             <button type="button" data-toggle="modal" data-target="#exampleModal1"class="btn btn-success">Add Products</button>
         </div>
     </div>
 </nav>
 
-<table class="table mt-3">
-    <thead>
+<table class="table table-striped mt-3 table-dark">
+    <thead class="thead-dark">
         <tr>
-            <th scope="col">ID</th>
+            <th scope="col">ID</th>   
+            <th scope="col">Product Name</th>
             <th scope="col">Quantity</th>
-            <th scope="col">P Name</th>
-            <th scope="col">P Color</th>
-            <th scope="col">P Material</th>
-            <th scope="col">P Price</th>
+            <th scope="col">Color</th>
+            <th scope="col">Material</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor= "let row of acclistsData">
             <td>{{row.id}}</td>
-            <td>{{row.productID}}</td>
             <td>{{row.productName}}</td>
+            <td>{{row.productID}}</td>
             <td>{{row.productColor}}</td>
             <td>{{row.productMaterial}}</td>
             <td>{{row.productPrice}}</td>
             <td>
                 <button  (click)="onEdit(row)"  class="btn btn-info"type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button  (click)="deleteProducts(row)" class="btn btn-danger mx-3">Delete</button>
+                <button  (click)="deleteProducts(row)" class="btn btn-danger fa fa-trash-o mx-1"> Delete</button>
             </td>
         </tr>
     </tbody>
 </table> 
-  <!-- Modal -->
+  <!--     Modal for update products      -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Products</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Update Products</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -69,27 +70,29 @@
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button"  (click)="updateAcclistsDetails()" class="btn btn-primary">Update</button>
+          <button type="button" id="cancel" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button"  (click)="updateAcclistsDetails()" class="btn btn-success">Update</button>
         </div>
       </div>
     </div>
   </div>
 
+
+  <!--     Modal for add products      -->
   <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Products</h5>
+          <h5 class="modal-title" id="exampleModalLabel"style="font-weight: bold;">Add Products</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" >
             <form [formGroup] ="formValue" >
                 <div class="form-group">
                   <label for="exampleInputEmail1">Quantity:</label>
-                  <input type="text" formControlName="productID" class="form-control" id="exampleInputEmail1" >
+                  <input type="number" formControlName="productID" class="form-control" id="exampleInputEmail1" >
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Product Name:</label>
@@ -111,5 +114,11 @@
               </form>
         </div>
         <div class="modal-footer">
-          <button type="button" id="cancel1" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button"  (click)="postAcclistsDetails()" class="btn btn-primary">Add</button>
+          <button type="button" id="cancel1" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button"  (click)="postAcclistsDetails()" class="btn btn-success">Add</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
