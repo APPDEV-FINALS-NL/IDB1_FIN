@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "productID": "23",
+      "productName": "qwe",
+      "productColor": "qwe",
+      "productMaterial": "qwe",
+      "productPrice": "15k",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
