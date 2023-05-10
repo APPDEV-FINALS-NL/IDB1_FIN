@@ -9,7 +9,7 @@ import { ApiService } from '../shared/shared/api.service';
   styleUrls: ['./acclists.component.css']
 })
 export class AcclistsComponent  implements OnInit{
-
+  term: any;
   selectedProd?:AcclistsModel;
   
   formValue !:FormGroup;

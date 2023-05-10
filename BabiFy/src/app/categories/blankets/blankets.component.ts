@@ -8,6 +8,7 @@ import { BLANKETS } from 'src/app/blankets-list';
   styleUrls: ['./blankets.component.css']
 })
 export class BlanketsComponent {
+  term: any;
   blankets = BLANKETS;
   title = 'Blankets Lists';
   selectedBlanket?:Blanket;

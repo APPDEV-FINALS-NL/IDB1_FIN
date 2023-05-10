@@ -11,7 +11,7 @@ export class DiapersComponent {
   diapers = DIAPERS;
   title = 'diapers Lists';
   selectedDiaper?:Diaper;
-    
+  term: any;
   onSelect(diaper:Diaper): void{
     this.selectedDiaper =diaper;
   }

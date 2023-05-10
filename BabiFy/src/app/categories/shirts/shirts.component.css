@@ -20,3 +20,8 @@ button{
 .stars{
   color:var(--orange);
 }
+.form-group{
+  background-color: #ffffff; margin-top: 3px;text-align: center;width: 20rem;padding-top: 3px; background-color: #28a745;
+  color: black;
+  font-weight: bold;
+}

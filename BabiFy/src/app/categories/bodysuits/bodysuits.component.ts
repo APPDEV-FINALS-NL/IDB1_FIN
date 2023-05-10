@@ -8,6 +8,7 @@ import { BODYSUITS } from 'src/app/bodysuits-list';
   styleUrls: ['./bodysuits.component.css']
 })
 export class BodysuitsComponent {
+  term: any;
   bodysuits = BODYSUITS;
   title = 'Bodysuits Lists';
   selectedBodysuit?:Bodysuit;

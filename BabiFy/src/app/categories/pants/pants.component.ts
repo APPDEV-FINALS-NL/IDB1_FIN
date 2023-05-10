@@ -11,7 +11,7 @@ export class PantsComponent {
   pants = PANTS;
   title = 'Pants Lists';
   selectedPant?:Pant;
-  
+  term: any;
   onSelect(pant:Pant): void{
     this.selectedPant = pant;
   }

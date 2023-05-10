@@ -1,44 +1,64 @@
 {
   "posts": [
     {
-      "categoryId": null,
-      "name": "Bibs",
-      "description": "A bib is a small piece of fabric that's tied under a baby's chin to keep food or milk from staining her clothes.",
-      "pRange": "₱350 - ₱1200",
-      "aRange": "0-18 months",
-      "imageUrl": null,
-      "id": 1,
-      "dateAdded": "2023-05-09"
-    },
-    {
       "categoryId": "",
-      "name": "Bodysuits",
-      "description": "A bodysuit is a one-piece form-fitting or skin-tight garment that covers the torso and the crotch, and sometimes the legs, hands, and feet, and cannot be used as a swimsuit.",
+      "name": "sdaw",
+      "description": "A bodysuit is a one-piece form-fitting or skin-tight garment that covers the torso and the crotch, and sometimes the legs, hands, and feet, and cannot be useasdsadd as a swimsuit.",
       "pRange": "₱360 - ₱1780",
       "aRange": "0-24 months",
-      "imageUrl": "",
-      "dateAdded": "2023-05-07",
-      "id": 2
-    },
-    {
-      "categoryId": null,
-      "name": "Mittens",
-      "description": "Mittens feature an elastic cuff to keep them securely on baby's hands.",
-      "pRange": "₱200 - ₱990",
-      "aRange": "0-5 months",
-      "imageUrl": null,
-      "dateAdded": "2023-05-06",
-      "id": 3
+      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
+      "id": 2,
+      "dateAdded": "2023-05-07"
     },
     {
       "categoryId": "",
-      "name": "Cloth Diaper",
-      "description": "Usually made of absorbent cotton, bamboo, or hemp, fitted cloth baby diapers have a contour shape similar to a disposable diaper, with elastic or gathered edges at the legs and back to contain messes.",
-      "pRange": "₱280 - ₱1500",
-      "aRange": "0-11 months",
+      "name": "Nic",
+      "description": "qweqwe",
+      "pRange": "13",
+      "aRange": "23",
+      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
+      "dateAdded": "2003-01-02",
+      "id": 5
+    },
+    {
+      "categoryId": "",
+      "name": "qew",
+      "description": "qwewq",
+      "pRange": "qwewq",
+      "aRange": "",
+      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
+      "dateAdded": "",
+      "id": 6
+    },
+    {
+      "categoryId": "",
+      "name": "",
+      "description": "",
+      "pRange": "",
+      "aRange": "",
       "imageUrl": "",
-      "dateAdded": "2023-05-08",
-      "id": 4
+      "dateAdded": "",
+      "id": 7
+    },
+    {
+      "categoryId": "",
+      "name": "234we",
+      "description": "qwewqe",
+      "pRange": "",
+      "aRange": "",
+      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
+      "dateAdded": "",
+      "id": 8
+    },
+    {
+      "categoryId": "",
+      "name": "wdqwd",
+      "description": "qwewqdwadsadgjorpdogjpoeifpoeifposeifpoesifposeifposifposeifopwipdoik",
+      "pRange": "asd",
+      "aRange": "qwe",
+      "imageUrl": "",
+      "dateAdded": "",
+      "id": 9
     }
   ],
   "comments": [],

@@ -11,7 +11,7 @@ export class HatsComponent {
   hats = HATS;
   title = 'Hats Lists';
   selectedHat?:Hat;
-  
+  term: any;
   onSelect(hat:Hat): void{
     this.selectedHat = hat;
   }

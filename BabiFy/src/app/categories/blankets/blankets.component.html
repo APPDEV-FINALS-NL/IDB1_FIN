@@ -10,9 +10,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  <div class="form-group">
+    <label for="term"> Blanket Categories</label>
+    <input class="form-control" type="text" [(ngModel)]= "term" placeholder="-------------- Search item here --------------" name="term" aria-label="Search"style="width: 20rem;">
+  </div>
+
   <div class="col-12">
     <div class="row align-items-start">
-      <div class="card" *ngFor="let blanket of blankets">
+      <div class="card" *ngFor="let blanket of blankets | filter : term">
         <img class="card-img-top" [src]="blanket.imageUrl" width="170" height="320" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{blanket.pname | uppercase}}</h5>

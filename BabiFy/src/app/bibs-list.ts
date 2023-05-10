@@ -2,6 +2,7 @@ import {Bib} from './bibs'
 
 export const BIBS: Bib[]=[
     {
+
     id: 1,
     pname: 'Silicone Baby Bibs Easily Wipe Clean',
     price: '₱199',

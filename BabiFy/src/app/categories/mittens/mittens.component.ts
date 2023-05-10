@@ -8,6 +8,7 @@ import { MITTENS } from 'src/app/mittens-list';
   styleUrls: ['./mittens.component.css']
 })
 export class MittensComponent {
+  term: any;
   mittens = MITTENS;
   title = 'Mittens Lists';
   selectedMitten?:Mitten;

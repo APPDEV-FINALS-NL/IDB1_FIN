@@ -10,9 +10,14 @@
   <title>jackets</title>
 </head>
 <body>
+  <div class="form-group">
+    <label for="term"> Jackets Categories</label>
+    <input class="form-control" type="text" [(ngModel)]= "term" placeholder="-------------- Search item here --------------" name="term" aria-label="Search"style="width: 20rem;">
+  </div>
   <div class="col-12">
     <div class="row align-items-start">
-      <div class="card" *ngFor="let jacket of jackets">
+      <div class="card" *ngFor="let jacket of jackets | filter : term">
+
         <img class="card-img-top" [src]="jacket.imageUrl" width="170" height="320" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{jacket.pname | uppercase}}</h5>

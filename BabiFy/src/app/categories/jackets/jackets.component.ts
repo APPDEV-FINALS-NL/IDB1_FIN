@@ -12,7 +12,7 @@ export class JacketsComponent {
   jackets = JACKETS;
   title = 'Jackets Lists';
   selectedJacket?:Jacket;
-  
+  term: any;
   onSelect(jacket:Jacket): void{
     this.selectedJacket = jacket;
   }
