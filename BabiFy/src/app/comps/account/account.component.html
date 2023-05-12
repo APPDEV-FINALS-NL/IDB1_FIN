@@ -4,11 +4,16 @@
 	<title>Login</title>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>	
-	<div class="main">
+<body >	
+<hr style="height:2px;border-width:0;color:gray;background-color:black; padding-top: 3px;">
+	<div class="main" style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
+		<hr style="height:2px;border-width:0;color:gray;background-color:black; padding-top: 3px;">
 		<input type="checkbox" id="chk" aria-hidden="true">
-			<div class="signup">
+		
+			<div class="signup"style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
+				
 				<form>
+					
 					<label for="chk" aria-hidden="true">Sign up</label>
 					<input type="text" name="txt" placeholder="User name" [(ngModel)]="signupObj.userName" required="">
 					<input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email" required="">
@@ -17,7 +22,7 @@
 				</form>
 			</div>
 
-			<div class="login">
+			<div class="login"style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
 				<form>
 					<label for="chk" aria-hidden="true">Login here</label>
 					<input type="email" name="email" placeholder="Email" [(ngModel)]="loginObj.email" required="">
@@ -27,7 +32,9 @@
 					<span class="new">Don't have an account yet? <a href="account">Create one.</a></span>
 				</form>
 			</div>
+			
 	</div>
+	
     <div class="text" style="background-image: url(https://img.freepik.com/premium-photo/baby-natural-material-clothes-concept-baby-clothes-shoes-neutral-background-with-blank-space-text-top-view-flat-lay_101906-842.jpg?w=360); height: 500px; width: 60%">
 		<h1>WELCOME</h1>
 		<h4>BabiFy Baby Apparel Shop</h4>

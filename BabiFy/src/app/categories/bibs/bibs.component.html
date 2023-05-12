@@ -51,18 +51,18 @@
                 <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedBib">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                      <div class="modal-header bg-info">
+                      <div class="modal-header bg-info"style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
+                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"></h5>  
                         <button type="button" class="close" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body text-dark bg-light">
-                        <h5 class="modal-title" id="exampleModalLabel" [innerText]="'Details of ' + selectedBib.pname"></h5>             
+                      <div class="modal-body text-dark">            
                           <span class="d-block" alt="" >  
                             <img src={{selectedBib.imageUrl}} style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
                           </span>
                           <!-- view details -->
-                          <div class="container-fluid">                           
+                          <div class="container-fluid">                       
                               <p class="font-weight-bold">PRICE <br>{{selectedBib.price}}</p>
                               <p class="font-weight-bold">COLOR <br>{{selectedBib.color}}</p>
                               <p class="font-weight-bold">MATERIAL<br>{{selectedBib.material}}</p>
