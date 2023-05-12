@@ -1,3 +1,10 @@
 body{
     font-family: Tahoma;
 }
+.well {
+    background-color: #ffffee
+  }
+  
+  #search {
+    border: 1px;
+  }  

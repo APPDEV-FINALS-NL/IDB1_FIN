@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./breadcrumb.component.css']
 })
 export class BreadcrumbComponent {
+  term: any;
 
+  
 }

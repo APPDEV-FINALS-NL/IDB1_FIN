@@ -8,6 +8,7 @@ import { CARTS } from 'src/app/cart-list';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  term:any
   carts = CARTS;
   selectedCart?: Cart;
   
@@ -15,3 +16,5 @@ export class NavbarComponent {
     this.selectedCart = cart;
   }
 }
+
+

@@ -42,6 +42,7 @@ export class AcclistsComponent  implements OnInit{
     this.api.postProducts(this.acclistsModelObj)
     .subscribe(res=>{
       console.log(res);
+      
       alert("Category added successfully.")
       let ref =document.getElementById('cancel1')
       ref?.click();
@@ -66,6 +67,7 @@ deleteProducts(row : any){
     .subscribe(res=>{
       let ref =document.getElementById('cancel2')
         ref?.click();
+        
         this.getAllProducts();
     })
 	}

@@ -1,45 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-</head>
-<body>
-    <nav class="container-fluid navbar navbar-expand-sm py-1 navbar-dark bg-info">
-        <a class="navbar-brand" routerLink="home">
-            <img src="assets/logo.png" width="80" height="50" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-              </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >           
-            <ul class="navbar-nav ml-auto">
-              <a href="cart">
-                <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
-                shopping_cart
-                </span>
-              </a>
-              <a routerLink="account">
-                <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
-                person
-                </span>
-              </a>
-            </ul>
-        </div>
+<marquee direction="left" behavior="scroll" href="home">Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+  Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+</marquee>
+<nav class="navbar navbar-expand-md"style="background-color: #08e1ae;
+background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);padding-left: 8rem; padding-top:4rem;padding-bottom:4rem">
+  
+  <a class="navbar-brand" routerLink="home">
+  <img src="assets/logo2.png" width="240" height="150" alt=""></a>
+ 
+  <div class="mx-auto order-0" >
+    <nav class="navbar justify-content-start" style="font-size: 13px;color: black;"><span style="padding-left: 1.3rem;"></span>
+      <a class="nav-link" routerLink="home"style="color: black;">Home</a>
+      <a class="nav-link" routerLink="acclists"style="color: black;">CRUD<span style="padding-left: 10rem;"></span></a>
+      <a class="nav-link" routerLink="home"style="color: black;font-family:Bahnschrift SemiLight;font-size:25px;FONT-WEIGHT:BOLD; padding-bottom:2px">BABIFY<span style="padding-left: 7.5rem;"></span></a>
+      <a class="nav-link" routerLink="contact" style="color: black;">Contact Us</a>
+     
+      <a class="nav-link" routerLink="references"style="color: black;">References</a>
+      
+      
     </nav>
-
-</body>
-</html>
+   
+      <input class="form-control"  type="text" [(ngModel)]= "term" placeholder=" Search item here " name="term" aria-label="Search"style="width: 50rem;border-radius: 30px;text-align:center;">
+      <nav class="navbar justify-content-start" style="font-size: 13px;color: black;"><span style="padding-left: 3rem;"></span>
+        <a class="nav-link" routerLink="bodysuits"style="color: black;">Bodysuits</a>
+        <a class="nav-link" routerLink="bibs"style="color: black;">Bibs</a>
+        <a class="nav-link" routerLink="mittens"style="color: black;">Mittens</a>
+        <a class="nav-link" routerLink="hats"style="color: black;">Hats</a>
+        <a class="nav-link" routerLink="blankets"style="color: black;">Blankets</a>
+        <a class="nav-link" routerLink="diapers"style="color: black;">Cloth Diaper</a>
+        <a class="nav-link" routerLink="pants"style="color: black;">Pants</a>
+        <a class="nav-link" routerLink="shirts"style="color: black;">T-Shirts</a>
+        <a class="nav-link" routerLink="jackets"style="color: black;">Jackets</a>
+    
+      </nav>
+      
+    </div>
+    
+    
+    <a href="cart" style="padding-left: 3rem;">
+      <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+      shopping_cart
+      </span>
+    </a>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <a href="account"> <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+          person
+          </span></a>
+  </div>
+</nav>

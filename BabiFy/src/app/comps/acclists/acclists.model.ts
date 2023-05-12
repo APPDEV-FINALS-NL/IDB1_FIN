@@ -1,5 +1,5 @@
 export class AcclistsModel{
-    categoryId: number = 0;
+    categoryId:string='';
     name: string='';
     description: string='';
     dateAdded!: Date;

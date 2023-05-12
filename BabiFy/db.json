@@ -1,64 +1,44 @@
 {
   "posts": [
     {
-      "categoryId": "",
-      "name": "sdaw",
-      "description": "A bodysuit is a one-piece form-fitting or skin-tight garment that covers the torso and the crotch, and sometimes the legs, hands, and feet, and cannot be useasdsadd as a swimsuit.",
-      "pRange": "₱360 - ₱1780",
-      "aRange": "0-24 months",
-      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
-      "id": 2,
-      "dateAdded": "2023-05-07"
+      "categoryId": "Bibs",
+      "name": null,
+      "description": null,
+      "pRange": null,
+      "aRange": null,
+      "imageUrl": null,
+      "id": 12,
+      "dateAdded": null
     },
     {
-      "categoryId": "",
-      "name": "Nic",
-      "description": "qweqwe",
-      "pRange": "13",
-      "aRange": "23",
-      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
-      "dateAdded": "2003-01-02",
-      "id": 5
-    },
-    {
-      "categoryId": "",
-      "name": "qew",
-      "description": "qwewq",
-      "pRange": "qwewq",
-      "aRange": "",
-      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
-      "dateAdded": "",
-      "id": 6
-    },
-    {
-      "categoryId": "",
+      "categoryId": "Blankets",
       "name": "",
       "description": "",
       "pRange": "",
       "aRange": "",
       "imageUrl": "",
       "dateAdded": "",
-      "id": 7
+      "id": 13
     },
     {
-      "categoryId": "",
-      "name": "234we",
-      "description": "qwewqe",
-      "pRange": "",
-      "aRange": "",
-      "imageUrl": "C:\\fakepath\\218372984_4100072393441860_3576740259712059759_n.jpg",
-      "dateAdded": "",
-      "id": 8
+      "categoryId": "Blankets",
+      "name": null,
+      "description": null,
+      "pRange": null,
+      "aRange": null,
+      "imageUrl": null,
+      "dateAdded": null,
+      "id": 14
     },
     {
-      "categoryId": "",
-      "name": "wdqwd",
-      "description": "qwewqdwadsadgjorpdogjpoeifpoeifposeifpoesifposeifposifposeifopwipdoik",
-      "pRange": "asd",
-      "aRange": "qwe",
-      "imageUrl": "",
-      "dateAdded": "",
-      "id": 9
+      "categoryId": "Bibs",
+      "name": null,
+      "description": null,
+      "pRange": null,
+      "aRange": null,
+      "imageUrl": null,
+      "dateAdded": null,
+      "id": 15
     }
   ],
   "comments": [],

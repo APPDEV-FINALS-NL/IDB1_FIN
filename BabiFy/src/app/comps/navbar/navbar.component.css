@@ -1,0 +1,12 @@
+
+marquee{
+    background-color: black;
+    font-family: tahoma;
+      display: flex;
+  
+    color: white;
+  }
+  nav{
+    height: 3rem;
+}
+

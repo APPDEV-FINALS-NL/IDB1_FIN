@@ -10,16 +10,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <div class="form-group">
-  <label for="term"> Bibs Categories</label>
-  <input class="form-control" type="text" [(ngModel)]= "term" placeholder="-------------- Search item here --------------" name="term" aria-label="Search"style="width: 20rem;">
-</div>
+    <div class="container"style="width: 30rem;padding-top:3px">
+      <div id="content">
+          <div class="input-group text-center">
+            <input type="text"  name="term"[(ngModel)]= "term" class="form-control search-form" placeholder="&#xF002; Search Bibs item here" style="font-family:Arial, FontAwesome;text-align: center;" />
+          </div>    
+    </div>
+  </div>
   
-  <div class="col-12">
+  <div class="col-12"  style="padding-left: 6.2rem;">
     <div class="row align-items-start">
       <div class="card" *ngFor="let bib of bibs | filter : term">
         <img class="card-img-top" [src]="bib.imageUrl" width="170" height="320" alt="Card image cap">
-          <div class="card-body">
+          <div class="card-body"style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
             <h5 class="card-title">{{bib.pname | uppercase}}</h5>
               <a type="button" routerLink="/bib/{{bib.id}}" class="text-white" [class.selected]="bib === selectedBib" data-toggle="modal" data-target="#exampleModal" (click)="onSelect(bib)">
                 <a href="">View more...</a>
@@ -32,7 +35,7 @@
                 <i class="far fa-star"></i>
               </div>
               <div>
-                <div style="background-color: #ffffff;">
+                <div style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
                   <button type="button"data-toggle="modal" data-target="#cartModal" class="btn btn-warning" (click)="onSelect(bib)"routerLink="/bib/{{bib.id}}">
                     Add to Cart
                   </button>
