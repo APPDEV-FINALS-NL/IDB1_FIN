@@ -1,3 +1,6 @@
+body{
+  background: #98de5b 74%;
+}
 #slideshow {
     overflow: hidden;
     height: 420px;
@@ -18,19 +21,6 @@
     duration and speed */
     animation: slide 7s ease infinite;
 }
-   
-  /* Set the background color
-  of each of the slides */
-.slide:nth-child(1) {
-    background: green;
-}
-   
-.slide:nth-child(2) {
-    background: pink;
-}
-   
-  /* Define the animation
-  for the slideshow */
 @keyframes slide {
      
   /* Calculate the margin-left for
@@ -52,32 +42,32 @@
     }
 }
 .container-fluid{
-    margin-top: 2rem;
+  padding: 1rem;
 }
 h1{
-    font-family: cursive;
-    font-size: 4rem;
+  font-family: cursive;
+  font-size: 4rem;
 }
 button{
-    padding: 1rem;
-    width: 17rem;
-    margin-top: 11rem;
-    margin-left: 30px;
-    font-family: Tahoma;
+  padding: 1rem;
+  width: 17rem;
+  margin-top: 11rem;
+  margin-left: 30px;
+  font-family: Tahoma;
 }
 .row{
-    margin: 1rem;
+  margin: 1rem;
 }
 h2{
-    font-family: cursive;
-    border-radius: 1px;
+  font-family: cursive;
+  border-radius: 1px;
 }
 img{
-    display: flex; 
-    width: 92%;
-    box-shadow:rgb(177, 139, 65);
+  display: flex; 
+  width: 92%;
+  box-shadow:rgb(177, 139, 65);
 }
 img:hover {
-    transition: 0.3s ease-in-out;
-    transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
 }

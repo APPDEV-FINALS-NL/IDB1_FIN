@@ -1,4 +1,13 @@
-<marquee direction="left" behavior="scroll" href="home">Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <marquee href="home">
   Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
   Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
   Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
@@ -9,53 +18,62 @@
   Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
   Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
 </marquee>
-<nav class="navbar navbar-expand-md"style="background-color: #08e1ae;
-background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);padding-left: 8rem; padding-top:4rem;padding-bottom:4rem">
-  
+<nav class="navbar navbar-expand-sm navbar-light" style="background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);"> 
   <a class="navbar-brand" routerLink="home">
-  <img src="assets/logo2.png" width="240" height="150" alt=""></a>
- 
+  <img src="assets/logo.png" width="240" height="150" alt=""></a>
+  <a routerLink="buynow">
+    <button type="button" class="btn btn-success">Deliver to<br>
+    <span class="material-symbols-outlined" style="color: rgb(0, 0, 0); font-size: 25px;">
+      location_on
+    </span>
+    Philippines
+  </button>
+  </a>
   <div class="mx-auto order-0" >
-    <nav class="navbar justify-content-start" style="font-size: 13px;color: black;"><span style="padding-left: 1.3rem;"></span>
-      <a class="nav-link" routerLink="home"style="color: black;">Home</a>
-      <a class="nav-link" routerLink="acclists"style="color: black;">CRUD<span style="padding-left: 10rem;"></span></a>
-      <a class="nav-link" routerLink="home"style="color: black;font-family:Bahnschrift SemiLight;font-size:25px;FONT-WEIGHT:BOLD; padding-bottom:2px">BABIFY<span style="padding-left: 7.5rem;"></span></a>
+    <nav class="navbar justify-content-between" style="font-size: 13px;color: black;">
+      <a class="nav-link" routerLink="acclists"style="color: black;">CRUD</a>
+      <a class="nav-link" routerLink="about us"style="color: black;">About us
+        <span style="padding-left: 7.5rem;"></span></a>
+      <a class="nav-link" routerLink="home"style="font-family:Bahnschrift SemiLight;font-size:25px;font-weight:bold; padding-bottom:2px">
+        BABIFY
+        <span style="padding-left: 7.5rem;"></span>
+      </a>
       <a class="nav-link" routerLink="contact" style="color: black;">Contact Us</a>
-     
       <a class="nav-link" routerLink="references"style="color: black;">References</a>
-      
-      
     </nav>
    
-      <input class="form-control"  type="text" [(ngModel)]= "term" placeholder=" Search item here " name="term" aria-label="Search"style="width: 50rem;border-radius: 30px;text-align:center;">
-      <nav class="navbar justify-content-start" style="font-size: 13px;color: black;"><span style="padding-left: 3rem;"></span>
-        <a class="nav-link" routerLink="bodysuits"style="color: black;">Bodysuits</a>
-        <a class="nav-link" routerLink="bibs"style="color: black;">Bibs</a>
-        <a class="nav-link" routerLink="mittens"style="color: black;">Mittens</a>
-        <a class="nav-link" routerLink="hats"style="color: black;">Hats</a>
-        <a class="nav-link" routerLink="blankets"style="color: black;">Blankets</a>
-        <a class="nav-link" routerLink="diapers"style="color: black;">Cloth Diaper</a>
-        <a class="nav-link" routerLink="pants"style="color: black;">Pants</a>
-        <a class="nav-link" routerLink="shirts"style="color: black;">T-Shirts</a>
-        <a class="nav-link" routerLink="jackets"style="color: black;">Jackets</a>
-    
-      </nav>
-      
-    </div>
-    
-    
-    <a href="cart" style="padding-left: 4rem;">
-      <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
-      shopping_cart
-      </span>
-    </a>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <a href="account">
-          <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
-          person <span style="padding-left: 1.3rem;"></span>
-          </span></a>
-          <a href="about"> 
-            <span class="" style="font-size:15px;color: black">About us</span>
-</a>
+    <form class="nosubmit">
+      <input class="nosubmit" type="search" placeholder="Search here...">
+    </form>
+    <nav class="navbar justify-content-between" style="font-size: 13px;color: black;">
+      <a class="nav-link" routerLink="home"style="color: black;">
+        <span class="material-symbols-outlined" style="color: black; font-size: 25px;">
+          house
+        </span>
+      </a>
+      <a class="nav-link" routerLink="bodysuits"style="color: black;">Bodysuits</a>
+      <a class="nav-link" routerLink="bibs"style="color: black;">Bibs</a>
+      <a class="nav-link" routerLink="mittens"style="color: black;">Mittens</a>
+      <a class="nav-link" routerLink="hats"style="color: black;">Hats</a>
+      <a class="nav-link" routerLink="blankets"style="color: black;">Blankets</a>
+      <a class="nav-link" routerLink="diapers"style="color: black;">Cloth Diaper</a>
+      <a class="nav-link" routerLink="pants"style="color: black;">Pants</a>
+      <a class="nav-link" routerLink="shirts"style="color: black;">T-Shirts</a>
+      <a class="nav-link" routerLink="jackets"style="color: black;">Jackets</a>
+    </nav>
   </div>
+
+  <a href="cart">
+    <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+      shopping_cart
+    </span>
+  </a>Cart
+  <a href="account" style="padding-left: 3rem;">
+    <span class="material-symbols-outlined" style="color: black; font-size: 40px;">
+      person
+    </span>
+  </a>My Account
+  
 </nav>
+</body>
+</html>
