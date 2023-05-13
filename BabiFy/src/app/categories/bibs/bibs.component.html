@@ -83,7 +83,7 @@
   <div class="modal fade" id="cartModal" tabindex="-1"data-toggle="modal" role="dialog" aria-labelledby="exampleModalLabel" *ngIf="selectedBib">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header border-bottom-0">
+        <div class="modal-header border-bottom-0"style="background-color: yellowgreen; ">
           <h5 class="modal-title" id="exampleModalLabel">
            BabiFy Shopping Cart
           </h5>
@@ -117,10 +117,9 @@
               </td>
             </tr>
           </table> 
+          <hr>
           <div class="modal-footer border-top-0 d-flex justify-content-between">
-            <a href="bibs">
-              <button type="button" class="btn btn-secondary">Close</button>           
-            </a>           
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                 
             <a href="cart">
               <button type="button" class="btn btn-warning">Add To Cart</button>
             </a>            

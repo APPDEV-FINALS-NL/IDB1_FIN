@@ -9,7 +9,6 @@ import { HomeComponent } from './comps/home/home.component';
 import { AccountComponent } from './comps/account/account.component';
 import { FooterComponent } from './comps/footer/footer.component';
 import { AboutComponent } from './comps/about/about.component';
-import { BreadcrumbComponent } from './comps/breadcrumb/breadcrumb.component';
 import { ContactComponent } from './comps/contact/contact.component';
 import { ReferencesComponent } from './comps/references/references.component';
 import { BodysuitsComponent } from './categories/bodysuits/bodysuits.component';

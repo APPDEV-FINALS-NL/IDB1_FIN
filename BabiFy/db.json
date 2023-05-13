@@ -1,46 +1,5 @@
 {
-  "posts": [
-    {
-      "categoryId": "Blankets",
-      "name": null,
-      "description": null,
-      "pRange": null,
-      "aRange": null,
-      "imageUrl": null,
-      "dateAdded": null,
-      "id": 14
-    },
-    {
-      "categoryId": "Bibs",
-      "name": null,
-      "description": null,
-      "pRange": null,
-      "aRange": null,
-      "imageUrl": null,
-      "dateAdded": null,
-      "id": 15
-    },
-    {
-      "categoryId": "Diapers",
-      "name": "EQ",
-      "description": "qweqweqwe",
-      "pRange": "150k",
-      "aRange": "2-3yrs old",
-      "imageUrl": null,
-      "id": 12,
-      "dateAdded": null
-    },
-    {
-      "categoryId": "Bodysuits",
-      "name": "",
-      "description": "",
-      "pRange": "",
-      "aRange": "",
-      "imageUrl": "",
-      "dateAdded": "",
-      "id": 16
-    }
-  ],
+  "posts": [],
   "comments": [],
   "profile": {
     "name": "typicode"
