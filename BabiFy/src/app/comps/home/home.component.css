@@ -1,45 +1,70 @@
 body{
   background: #98de5b 74%;
 }
+/* Styling the area of the slides */
 #slideshow {
-    overflow: hidden;
-    height: 420px;
-    width: 100%;
-    margin: 0 auto;
+  overflow: hidden;
+  height: 440px;
+  width: 1500px;
+  margin: 0 auto;
 }
+ 
+/* Style each of the sides
+with a fixed width and height */
 .slide {
-    float: left;
-    height: 420px;
-    width: 46%;
+  float: left;
+  height: 440px;
+  width: 1500px;
 }
+ 
+/* Add animation to the slides */
 .slide-wrapper {
-  /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(728px * 4);
    
-  /* Specify the animation with the
-    duration and speed */
-    animation: slide 7s ease infinite;
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(1500px * 3);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 7s ease infinite;
 }
+ 
+/* Set the background color
+of each of the slides */
+.slide:nth-child(1) {
+  background: green;
+}
+ 
+.slide:nth-child(2) {
+  background: pink;
+}
+ 
+.slide:nth-child(3) {
+  background: red;
+}
+
+ 
+/* Define the animation
+for the slideshow */
 @keyframes slide {
-     
-  /* Calculate the margin-left for
-    each of the slides */
-    20% {
-      margin-left: 0px;
-    }
    
-    40% {
-      margin-left: calc(-728px * 1);
-    }
-   
-    60% {
-      margin-left: calc(-728px * 2);
-    }
-   
-    80% {
-      margin-left: calc(-728px * 3);
-    }
+/* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+ 
+  40% {
+    margin-left: calc(-1500px * 1);
+  }
+ 
+  60% {
+    margin-left: calc(-1500px * 2);
+  }
+ 
+  /* 80% {
+    margin-left: calc(-1500px * 3);
+  } */
 }
 .container-fluid{
   padding: 1rem;
@@ -50,9 +75,9 @@ h1{
 }
 button{
   padding: 1rem;
-  width: 17rem;
+  width: 19rem;
   margin-top: 11rem;
-  margin-left: 30px;
+  margin-right: 5rem;
   font-family: Tahoma;
 }
 .row{
