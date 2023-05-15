@@ -1,5 +1,16 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "categoryId": "Diapers",
+      "name": "",
+      "description": "",
+      "pRange": "",
+      "aRange": "",
+      "imageUrl": "",
+      "dateAdded": "",
+      "id": 1
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"

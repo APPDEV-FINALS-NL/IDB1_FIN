@@ -25,6 +25,8 @@ import { BuynowComponent } from './buynow/buynow.component';
 import { AcclistsComponent } from './comps/acclists/acclists.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ChatComponent } from './comps/chat/chat.component';
+
 
 
 
@@ -52,6 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReferencesComponent,
     BuynowComponent,
     AcclistsComponent,
+    ChatComponent,
+
 
   ],
   imports: [
@@ -62,7 +66,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,6 +19,7 @@ import { DiapersComponent } from './categories/diapers/diapers.component';
 import { CartComponent } from './cart/cart.component';
 import { BuynowComponent } from './buynow/buynow.component';
 import { AcclistsComponent } from './comps/acclists/acclists.component';
+import { ChatComponent } from './comps/chat/chat.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,8 @@ const routes: Routes = [
   { path:'diapers', component: DiapersComponent},
   { path:'cart', component:  CartComponent},
   { path: 'buynow', component: BuynowComponent},
-  { path: 'acclists', component:AcclistsComponent}
+  { path: 'acclists', component:AcclistsComponent},
+  { path: 'chat', component:ChatComponent}
 ];
 
 
