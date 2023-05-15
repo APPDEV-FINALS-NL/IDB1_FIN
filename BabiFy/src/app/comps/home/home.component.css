@@ -73,13 +73,7 @@ h1{
   font-family: cursive;
   font-size: 4rem;
 }
-button{
-  padding: 1rem;
-  width: 19rem;
-  margin-top: 11rem;
-  margin-right: 5rem;
-  font-family: Tahoma;
-}
+
 .row{
   margin: 1rem;
 }
@@ -95,4 +89,28 @@ img{
 img:hover {
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
+}  div.gallery {
+
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  font-weight: bold;
+  font-size: 30px;
+  color:#ee4d2d;
+  padding-top:10px;
+  text-align: center;
+  width: 180px;
+  background-color: rgb(255, 255, 255);
 }
