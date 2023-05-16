@@ -11,10 +11,12 @@ import { ApiService } from '../shared/shared/api.service';
 export class AcclistsComponent  implements OnInit{
   term: any;
   selectedProd?:AcclistsModel;
-  
+  alert: boolean=false;
+  alert1: boolean=false;
+  alert2: boolean=false;
   formValue !:FormGroup;
   acclistsModelObj: AcclistsModel = new AcclistsModel();
-  acclistsData !:any;
+  acclistsData:any;
   constructor(private formbuilber: FormBuilder,
     private api: ApiService) { }
   
@@ -27,6 +29,7 @@ export class AcclistsComponent  implements OnInit{
       pRange : [''],
       aRange : [''],
       imageUrl: [''],
+      
     })
     this.getAllProducts();
   }
@@ -42,8 +45,7 @@ export class AcclistsComponent  implements OnInit{
     this.api.postProducts(this.acclistsModelObj)
     .subscribe(res=>{
       console.log(res);
-      
-      alert("Category added successfully.")
+      this.alert1=true
       let ref =document.getElementById('cancel1')
       ref?.click();
       this.formValue.reset();
@@ -65,9 +67,9 @@ deleteProducts(row : any){
 	if (confirm("Are you sure you want to delete this record?") == true) {
     this.api.deleteProducts(row.id)
     .subscribe(res=>{
+    this.alert=true
       let ref =document.getElementById('cancel2')
         ref?.click();
-        
         this.getAllProducts();
     })
 	}
@@ -75,6 +77,13 @@ deleteProducts(row : any){
     this.getAllProducts();
 	}
 }
+closeAlert(){
+  this.alert=false
+  this.alert1=false
+  this.alert2=false
+  
+}
+
 
 onEdit(row: any){
   this.acclistsModelObj.id = row.id;
@@ -97,7 +106,7 @@ updateAcclistsDetails(){
 
   this.api.updateProducts(this.acclistsModelObj,this.acclistsModelObj.id )
   .subscribe(res=>{
-    alert("Updated Successfully");
+    this.alert2=true
     let ref =document.getElementById('cancel')
     ref?.click();
     this.formValue.reset();
