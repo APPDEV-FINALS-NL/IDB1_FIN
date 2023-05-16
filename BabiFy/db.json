@@ -1,14 +1,24 @@
 {
   "posts": [
     {
-      "categoryId": "Diapers",
+      "categoryId": "Hats",
+      "name": "asdsadsadsa",
+      "description": "asd",
+      "pRange": null,
+      "aRange": null,
+      "imageUrl": null,
+      "dateAdded": null,
+      "id": 7
+    },
+    {
+      "categoryId": "",
       "name": "",
       "description": "",
       "pRange": "",
       "aRange": "",
       "imageUrl": "",
       "dateAdded": "",
-      "id": 1
+      "id": 8
     }
   ],
   "comments": [],

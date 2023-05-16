@@ -115,28 +115,12 @@ div.desc {
   background-color: rgb(255, 255, 255);
 }
 
+div.desc{
+  width: 170px;
+ 
+}
+.progress-bar{
+  color: white;
+  font-weight: bold;
+}
 
-#clock{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-	position: absolute;
-	top: 50%;
-	left: 20%;
-	transform: translate(-50%, -50%);
-}
-#clock > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #00BF96;
-	display: inline-block;
-}
-#clock div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: #00816A;
-	display: inline-block;
-}
