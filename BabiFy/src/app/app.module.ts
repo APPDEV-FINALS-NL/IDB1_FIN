@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
+import { CountdownModule } from 'ngx-countdown';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './comps/navbar/navbar.component';
 import { HomeComponent } from './comps/home/home.component';
@@ -55,8 +57,6 @@ import { ChatComponent } from './comps/chat/chat.component';
     BuynowComponent,
     AcclistsComponent,
     ChatComponent,
-
-
   ],
   imports: [
     BrowserModule,
@@ -67,7 +67,7 @@ import { ChatComponent } from './comps/chat/chat.component';
     ReactiveFormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-
+    CountdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

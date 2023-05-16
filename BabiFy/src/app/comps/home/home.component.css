@@ -89,28 +89,20 @@ img{
 img:hover {
   transition: 0.3s ease-in-out;
   transform: scale(1.1);
-}  div.gallery {
-
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
 }
-
-div.gallery:hover {
-  border: 1px solid #777;
+/* flash deals */
+table{
+  border: 2px solid; 
+  background-color: rgb(16, 170, 5);
 }
-
-div.gallery img {
-  width: 100%;
-  height: auto;
+.card{
+  height: 19rem;
 }
-
-div.desc {
+.progress{
+  height:2.5rem;
+  border-radius: 2rem;
+}
+.progress-bar{
+  color: white;
   font-weight: bold;
-  font-size: 30px;
-  color:#ee4d2d;
-  padding-top:10px;
-  text-align: center;
-  width: 180px;
-  background-color: rgb(255, 255, 255);
 }
