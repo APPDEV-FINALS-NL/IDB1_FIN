@@ -16,3 +16,4 @@ export class DiapersComponent {
     this.selectedDiaper =diaper;
   }
 }
+

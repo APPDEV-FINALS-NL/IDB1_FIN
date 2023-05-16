@@ -37,10 +37,10 @@
                 <div style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
                   <button type="button"data-toggle="modal" data-target="#cartModal" class="btn btn-warning" (click)="onSelect(tshirt)"routerLink="/tshirt/{{tshirt.id}}">
                     Add to Cart
-                  </button> 
+                  </button>  <a href="buynow">
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
                     Buy Now
-                  </button>  </div>
+                  </button></a> </div>
                 <!-- Modal -->
                 <div class="modal bd-example-modal-lg" data-toggle="modal" data-target=".bd-example-modal-lg" id="exampleModal" *ngIf="selectedTshirt">
                   <div class="modal-dialog modal-lg">

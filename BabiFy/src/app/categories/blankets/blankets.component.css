@@ -42,3 +42,11 @@ button{
   .text-center {
     color: #fff;
   }
+  .btn-success {
+    color: #000000;
+    background-color:#ffa41c;
+    border-color: #28a745;
+  }
+  .btn-success:hover{
+    background-color: #ff8c04
+  }

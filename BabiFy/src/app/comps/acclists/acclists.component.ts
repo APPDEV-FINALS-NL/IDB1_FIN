@@ -113,6 +113,7 @@ updateAcclistsDetails(){
     this.getAllProducts();
   })
 }
+
 }
 
 

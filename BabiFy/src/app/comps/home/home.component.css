@@ -101,10 +101,15 @@ table{
 .progress{
   height:2.5rem;
   border-radius: 2rem;
+  
 }
 .progress-bar{
   color: white;
   font-weight: bold;
+ font-family: 'Roboto';
+ font-size: 12px;}
+
+.table thead th {
+
+   border-bottom: 1px solid #dee2e6; 
 }
-
-

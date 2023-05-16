@@ -2,13 +2,13 @@
   "posts": [
     {
       "categoryId": "Hats",
-      "name": "asdsadsadsa",
-      "description": "asd",
-      "pRange": null,
-      "aRange": null,
-      "imageUrl": null,
-      "dateAdded": null,
-      "id": 7
+      "name": "qweqwqwewqe",
+      "description": "qweqwe",
+      "pRange": "qweqw",
+      "aRange": "qweqwe",
+      "imageUrl": "",
+      "dateAdded": "",
+      "id": 1
     },
     {
       "categoryId": "",
@@ -18,7 +18,7 @@
       "aRange": "",
       "imageUrl": "",
       "dateAdded": "",
-      "id": 8
+      "id": 2
     }
   ],
   "comments": [],

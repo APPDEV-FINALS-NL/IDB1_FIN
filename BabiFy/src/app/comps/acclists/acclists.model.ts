@@ -7,4 +7,5 @@ export class AcclistsModel{
     aRange: string='';
     imageUrl: string='';
     id: any;
+    
 }
