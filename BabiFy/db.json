@@ -1,23 +1,23 @@
 {
   "posts": [
     {
-      "categoryId": "Hats",
-      "name": "qweqwqwewqe",
-      "description": "qweqwe",
-      "pRange": "qweqw",
-      "aRange": "qweqwe",
-      "imageUrl": "",
-      "dateAdded": "",
-      "id": 1
+      "categoryId": null,
+      "name": null,
+      "description": null,
+      "pRange": null,
+      "aRange": null,
+      "imageUrl": null,
+      "id": 3,
+      "dateAdded": null
     },
     {
-      "categoryId": "",
-      "name": "",
-      "description": "",
-      "pRange": "",
-      "aRange": "",
-      "imageUrl": "",
-      "dateAdded": "",
+      "categoryId": "Diapers",
+      "name": null,
+      "description": null,
+      "pRange": "asdsa",
+      "aRange": null,
+      "imageUrl": null,
+      "dateAdded": null,
       "id": 2
     }
   ],

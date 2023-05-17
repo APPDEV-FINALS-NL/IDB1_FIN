@@ -5,7 +5,7 @@ body{
 #slideshow {
  overflow: hidden;
   height: 440px;
-  width: 1500px;
+  width: 1550px;
 
 }
  
@@ -111,4 +111,21 @@ table{
 
 .table thead th {
   border-bottom: 1px solid #dee2e6; 
+}
+
+#carouselExampleIndicators {
+  width: 950px;
+ 
+  height: 300px;
+  
+ 
+  
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+.carousel-indicators li {
+  background-color: black;
 }

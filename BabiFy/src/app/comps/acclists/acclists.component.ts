@@ -53,8 +53,9 @@ export class AcclistsComponent  implements OnInit{
     },
     err=>{
       alert("Something Went Wrong")
+      
     })
-  }
+    this.getAllProducts();}
   
 getAllProducts(){
   this.api.getProducts()
