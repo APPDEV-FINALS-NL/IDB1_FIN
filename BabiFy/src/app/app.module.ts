@@ -31,10 +31,6 @@ import { ChatComponent } from './comps/chat/chat.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
