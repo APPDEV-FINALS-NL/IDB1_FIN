@@ -5,6 +5,8 @@ body{
 #slideshow {
   overflow: hidden;
   height: 440px;
+  width: 1517px;
+
   width: 1500px;
 }
 /* Style each of the sides
@@ -111,3 +113,4 @@ table{
 .carousel-indicators li {
   background-color: black;
 }
+
