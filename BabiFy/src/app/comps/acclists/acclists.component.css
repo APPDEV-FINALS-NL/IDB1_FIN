@@ -1,10 +1,14 @@
 body{
     font-family: Tahoma;
+    background: #c8e8e9; padding-bottom: 1rem;
+}
+table{
+  background-color: #08e1ae; 
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
 }
 .well {
-    background-color: #ffffee
-  }
-  
-  #search {
-    border: 1px;
-  }  
+  background-color: #ffffee
+}
+#search {
+  border: 1px;
+}  

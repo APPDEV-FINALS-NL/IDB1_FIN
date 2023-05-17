@@ -1,5 +1,16 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "categoryId": "Blankets",
+      "name": "Baby Swaddle Fur Blanket",
+      "description": "Cozzy and fuzzy warm.",
+      "pRange": "₱280 - ₱1500",
+      "aRange": "0-11 months",
+      "imageUrl": "",
+      "dateAdded": "2023-05-12",
+      "id": 1
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"

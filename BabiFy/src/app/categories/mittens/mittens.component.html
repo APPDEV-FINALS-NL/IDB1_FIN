@@ -17,9 +17,9 @@
         </div>    
   </div>
 </div>
-  <div class="col-12"  style="padding-left: 6.2rem;">
+  <div class="col-12">
     <div class="row align-items-start">
-      <div class="card" *ngFor="let mitten of mittens | filter : term">
+      <div class="card mx-auto" *ngFor="let mitten of mittens | filter : term">
         <img class="card-img-top" [src]="mitten.imageUrl" width="170" height="320" alt="Card image cap">
           <div class="card-body"style="background-color: #08e1ae; background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);">
             <h5 class="card-title">{{mitten.pname | uppercase}}</h5>

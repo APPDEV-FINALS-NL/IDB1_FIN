@@ -1,11 +1,7 @@
 body{
-	/* margin: 0;
-	padding: 0; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	/* background-image: url("https://img.freepik.com/premium-photo/baby-natural-material-clothes-concept-baby-clothes-shoes-neutral-background-with-blank-space-text-top-view-flat-lay_101906-842.jpg?w=360"); */
 }
 .text{
 	color:rgb(0, 0, 0);
@@ -101,15 +97,12 @@ button:hover{
 	transform: scale(.6);
 }
 span.psw{
-	margin-left: 13.5rem;
+	margin-left: 15rem;
 }
-
 span.new{
 	margin-top: 1rem;
-	margin-left: 8rem;
+	margin-left: 10rem;
 }
-
-
 #chk:checked ~ .login{
 	transform: translateY(-500px);
 }

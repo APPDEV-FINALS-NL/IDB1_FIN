@@ -3,12 +3,10 @@ body{
 }
 /* Styling the area of the slides */
 #slideshow {
- overflow: hidden;
+  overflow: hidden;
   height: 440px;
-  width: 1550px;
-
+  width: 1500px;
 }
- 
 /* Style each of the sides
 with a fixed width and height */
 .slide {
@@ -16,10 +14,8 @@ with a fixed width and height */
   height: 440px;
   width: 1500px;
 }
- 
 /* Add animation to the slides */
 .slide-wrapper {
-   
 /* Calculate the total width on the
   basis of number of slides */
   width: calc(1500px * 3);
@@ -28,22 +24,17 @@ with a fixed width and height */
   duration and speed */
   animation: slide 7s ease infinite;
 }
- 
 /* Set the background color
 of each of the slides */
 .slide:nth-child(1) {
   background: green;
 }
- 
 .slide:nth-child(2) {
   background: pink;
 }
- 
 .slide:nth-child(3) {
   background: red;
 }
-
- 
 /* Define the animation
 for the slideshow */
 @keyframes slide {
@@ -73,7 +64,6 @@ h1{
   font-family: cursive;
   font-size: 4rem;
 }
-
 .row{
   margin: 1rem;
 }
@@ -101,29 +91,21 @@ table{
 .progress{
   height:2.5rem;
   border-radius: 2rem;
-  
 }
 .progress-bar{
   color: white;
   font-weight: bold;
   font-family: 'Roboto';
   font-size: 12px;}
-
 .table thead th {
   border-bottom: 1px solid #dee2e6; 
 }
-
 #carouselExampleIndicators {
   width: 950px;
- 
   height: 300px;
-  
- 
-  
 }
-
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-next, .carousel-control-prev {
+/*, .carousel-indicators */ 
     filter: invert(100%);
 }
 .carousel-indicators li {

@@ -48,7 +48,7 @@ export const MITTENS: Mitten[]=[
 },
 {
     id: 6,
-    pname: 'Newborn Mittens Girl Infant No Scratch Mittens',
+    pname: 'Newborn Girl Infant No Scratch Mittens',
     price: '₱499',
     type: 'Pull-on closure',
     material: '100% Cotton',

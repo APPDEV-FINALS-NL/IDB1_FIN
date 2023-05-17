@@ -6,7 +6,7 @@ body{
 .card{
     max-width:20rem;
     min-height:25rem;
-    margin: 8px;
+    margin: 10px;
 }
 button{
     margin:1rem;
@@ -21,42 +21,26 @@ button{
 .stars{
     color:var(--orange);
 }
-
 .form-group{
     background-color: #ffffff; margin-top: 3px;text-align: center;width: 20rem;padding-top: 3px; background-color: #28a745;
     color: black;
     font-weight: bold;
 }
-
-
-
-
-
-
-
 .well {
     background-color: #ffffee
-  }
-  
-  
-
-
-  #search {
-    border: 1px;
-  }
-  
-  .search-btn {
-    cursor:pointer;
-    border-radius: 0 30px 30px 0; 
-    background-color:#fff;
-    color:#669;
-    
-  }
-  
-  .text-center {
-    color: #fff;
-  }
-
+}
+#search {
+  border: 1px;
+}
+.search-btn {
+  cursor:pointer;
+  border-radius: 0 30px 30px 0; 
+  background-color:#fff;
+  color:#669;
+} 
+.text-center {
+  color: #fff;
+}
 .btn-success {
   color: #000000;
   background-color:#ffa41c;

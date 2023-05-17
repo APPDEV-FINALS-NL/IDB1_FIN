@@ -10,7 +10,7 @@ body{
 }
 .table-image {
   border: 0;
-  color: #666;
+  color: #000000;
   font-size: 0.8rem;
 }
 td, thead {
@@ -23,7 +23,4 @@ td, thead {
 }
 .modal-footer {
   padding-top: 0rem;
-}
-.modal-header{
-  background-color:#1cb2ba
 }

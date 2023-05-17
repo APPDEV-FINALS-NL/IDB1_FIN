@@ -63,7 +63,7 @@ export const BLANKETS: Blanket[]=[
 },
 {
     id: 7,
-    pname: 'Muslin Swaddle Blankets Neutral Receiving Blanket ',
+    pname: 'Muslin Swaddle Neutral Receiving Blanket ',
     price: '₱890',
     material: 'Cotton',
     color: 'Green White',
