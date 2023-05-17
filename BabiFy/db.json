@@ -1,26 +1,5 @@
 {
-  "posts": [
-    {
-      "categoryId": null,
-      "name": null,
-      "description": null,
-      "pRange": null,
-      "aRange": null,
-      "imageUrl": null,
-      "id": 3,
-      "dateAdded": null
-    },
-    {
-      "categoryId": "Diapers",
-      "name": null,
-      "description": null,
-      "pRange": "asdsa",
-      "aRange": null,
-      "imageUrl": null,
-      "dateAdded": null,
-      "id": 2
-    }
-  ],
+  "posts": [],
   "comments": [],
   "profile": {
     "name": "typicode"
