@@ -28,7 +28,7 @@ import { AcclistsComponent } from './comps/acclists/acclists.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ChatComponent } from './comps/chat/chat.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -65,7 +65,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     Ng2SearchPipeModule,
     CountdownModule,
-    FontAwesomeModule,
+    // FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
