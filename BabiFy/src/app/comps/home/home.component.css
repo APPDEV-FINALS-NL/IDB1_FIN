@@ -5,7 +5,7 @@ body{
 #slideshow {
  overflow: hidden;
   height: 440px;
-  width: 1518px;
+  width: 1500px;
 
 }
  
@@ -106,10 +106,9 @@ table{
 .progress-bar{
   color: white;
   font-weight: bold;
- font-family: 'Roboto';
- font-size: 12px;}
+  font-family: 'Roboto';
+  font-size: 12px;}
 
 .table thead th {
-
-   border-bottom: 1px solid #dee2e6; 
+  border-bottom: 1px solid #dee2e6; 
 }
