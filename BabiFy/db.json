@@ -12,13 +12,13 @@
     },
     {
       "categoryId": "Mittens",
-      "name": "Baby Mitten",
+      "name": "Baby Fur Mitten",
       "description": "Baby mittens are protective mittens for infants. They look a lot like the mittens that adults and older children wear during winter. The ones that you wear are probably made of a material such as wool or fleece, but mittens for babies are usually made out of soft cotton.",
       "pRange": "₱180 - ₱800",
       "aRange": "0-3 months",
       "imageUrl": "",
-      "dateAdded": "2023-05-15",
-      "id": 2
+      "id": 2,
+      "dateAdded": "2023-05-15"
     }
   ],
   "comments": [],
