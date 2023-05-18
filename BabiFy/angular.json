@@ -24,17 +24,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [  
-              "src/styles.css",  
+            "styles": [
+              "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/font-awesome/css/font-awesome.css"
-             
-            ],  
-            "scripts": [              
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js" 
-            ]   
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,18 +92,26 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [  
-              "src/styles.css",  
+            "styles": [
+              "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "../node_modules/font-awesome/css/font-awesome.css"
-              
-            ],  
-            "scripts": [              
-              "./node_modules/jquery/dist/jquery.min.js",  
-              "./node_modules/popper.js/dist/umd/popper.min.js",  
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js" 
-           
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "BabiFy:build:production",
+            "firebaseProject": "appdev1-finals",
+            "firebaseHostingSite": "appdev1-finals"
           }
         }
       }

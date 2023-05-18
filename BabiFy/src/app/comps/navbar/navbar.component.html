@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <marquee href="home">
@@ -18,7 +20,7 @@
     Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
     Free Shipping For Orders Over ₱350 Free Shipping For Orders Over ₱350
   </marquee>
-  <nav class="navbar navbar-expand-sm navbar-light" style="background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%); height: 8.5rem;"> 
+  <nav class="navbar navbar-expand-sm navbar-light" style="background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%); height: 10rem;"> 
     <a class="navbar-brand" routerLink="home">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,58 +28,58 @@
       <img src="assets/logo.png" width="250" height="150" alt="">
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <a routerLink="buynow">Address
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">Address
+      <a routerLink="buynow">
         <span class="material-symbols-outlined" style="color: rgb(0, 0, 0); font-size: 30px;">
           location_on
         </span>
       </a>
       
-      <div class="mx-auto order-0" >
-        <nav class="navbar justify-content-between" style="font-size: 13px;color: black;">
-          <a class="nav-link" routerLink="acclists"style="color: black;">CRUD</a>|
-          <a class="nav-link" routerLink="about"style="color: black;">About us</a>
+      <div class="mx-auto">
+        <nav class="navbar justify-content-between" style="font-size: 13px; color: black;">
+          <a class="nav-link" routerLink="acclists">CRUD</a>|
+          <a class="nav-link" routerLink="about">About us</a>
           <span style="padding-left: 7.5rem;"></span>
           <a class="nav-link" routerLink="home"style="font-family:Bahnschrift SemiLight;font-size:25px;font-weight:bold; padding-bottom:2px">
             BABIFY           
           </a>
           <span style="padding-right: 7.5rem;"></span>
-          <a class="nav-link" routerLink="contact" style="color: black;">Contact Us</a>|
-          <a class="nav-link" routerLink="references"style="color: black;">References</a>
+          <a class="nav-link" routerLink="contact" >Contact Us</a>|
+          <a class="nav-link" routerLink="references">References</a>
         </nav>
       
         <form class="nosubmit">
           <input class="nosubmit" type="search" placeholder="Search here...">
         </form>
         <nav class="navbar justify-content-between" style="font-size: 13px;color: black;">
-          <a class="nav-link" routerLink="home"style="color: black;">
+          <a class="nav-link" routerLink="home">
             <span class="material-symbols-outlined" style="color: black; font-size: 25px;">
               house
             </span>
           </a>|
-          <a class="nav-link" routerLink="bodysuits"style="color: black;">Bodysuits</a>|
-          <a class="nav-link" routerLink="bibs"style="color: black;">Bibs</a>|
-          <a class="nav-link" routerLink="mittens"style="color: black;">Mittens</a>|
-          <a class="nav-link" routerLink="hats"style="color: black;">Hats</a>|
-          <a class="nav-link" routerLink="blankets"style="color: black;">Blankets</a>|
-          <a class="nav-link" routerLink="diapers"style="color: black;">Cloth Diaper</a>|
-          <a class="nav-link" routerLink="pants"style="color: black;">Pants</a>|
-          <a class="nav-link" routerLink="shirts"style="color: black;">T-Shirts</a>|
-          <a class="nav-link" routerLink="jackets"style="color: black;">Jackets</a>
-        </nav>
+          <a class="nav-link" routerLink="bodysuits">Bodysuits</a>|
+          <a class="nav-link" routerLink="bibs">Bibs</a>|
+          <a class="nav-link" routerLink="mittens">Mittens</a>|
+          <a class="nav-link" routerLink="hats">Hats</a>|
+          <a class="nav-link" routerLink="blankets">Blankets</a>|
+          <a class="nav-link" routerLink="diapers">Cloth Diaper</a>|
+          <a class="nav-link" routerLink="pants">Pants</a>|
+          <a class="nav-link" routerLink="shirts">T-Shirts</a>|
+          <a class="nav-link" routerLink="jackets">Jackets</a>
+        </nav>       
       </div>
       <a href="chat">
-        <span class='far fa-comments' style='font-size:30px'></span>chats
+        <span class='far fa-comments' style='font-size:30px'></span>
       </a>
       <a href="cart" style="padding-left: .5rem;">
         <span class="material-symbols-outlined" style="color: black; font-size: 30px;">
           shopping_cart
-        </span>cart
+        </span>
       </a>
       <a href="account" style="padding-left: .5rem;">
         <span class="material-symbols-outlined" style="color: black; font-size: 30px;">
           person
-        </span>Account
+        </span>
       </a>
     </div>
   </nav>

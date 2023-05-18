@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appdev1-finals": {
+      "hosting": {
+        "BabiFy": [
+          "appdev1-finals"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appdev1-finals"
+  }
+}
