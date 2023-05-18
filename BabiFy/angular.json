@@ -110,8 +110,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "BabiFy:build:production",
-            "firebaseProject": "appdev1-finals",
-            "firebaseHostingSite": "appdev1-finals"
+            "firebaseProject": "babify-web-app",
+            "firebaseHostingSite": "babify-web-app"
           }
         }
       }
